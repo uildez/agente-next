@@ -1,0 +1,94 @@
+{
+  "Topbar": {
+    "title": "Do Brasil para"
+  },
+  "Country": {
+    "brasil": "todo o mundo"
+  },
+  "Header": {
+    "available": "Disponível para colaboração",
+    "header": "Agência parceira global de UX Design para",
+    "animate": "empreendedores",
+    "call": "Agende uma ligação",
+    "cta": "Veja nosso trabalho"
+  },
+  "Menu": {
+    "who": "Quem somos",
+    "what": "O que fazemos",
+    "why": "Porque A gente?",
+    "contact": "Contato",
+    "portfolio": "Portfólio",
+    "home": "Início",
+    "translate": "Mudar para EN"
+  },
+  "Partnerships": {
+    "pretitle": "Parceiros",
+    "title": "Nossos incríveis clientes "
+  },
+  "Projects": {
+    "cta": "Ver todos os projetos",
+    "project1": { "title": "", "subtitle": "", "button": "" },
+    "project2": { "title": "", "subtitle": "", "button": "" },
+    "project3": { "title": "", "subtitle": "", "button": "" },
+    "project4": { "title": "", "subtitle": "", "button": "" }
+  },
+  "Numbers": {
+    "number1": "anos de experiência",
+    "number2": "projetos entreges",
+    "number3": "clientes ao redor do mundo"
+  },
+  "Whyus": {
+    "topic1": {
+      "title": "More than a partner a force of change",
+      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+    },
+    "topic2": {
+      "title": "More than a partner a force of change",
+      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+    },
+    "topic3": {
+      "title": "More than a partner a force of change",
+      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+    }
+  },
+  "Services": {
+    "title": "Want to save money by <span>working with expert?</span>",
+    "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus.",
+    "services1": { "title": "", "subtitle": "" },
+    "services2": { "title": "", "subtitle": "" },
+    "services3": { "title": "", "subtitle": "" },
+    "services4": { "title": "", "subtitle": "" },
+    "services5": { "title": "", "subtitle": "" },
+    "services6": { "title": "", "subtitle": "" }
+  },
+  "About": {
+    "title": "Quem somos nós?",
+    "text": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus.",
+    "aboutHe": "I'm Uildes. I'm a minimalist raised in design, with almost 10 years of experience in visual design, four years of web development, and diverse skills such as video editing, animation, and web optimization (the perfect package for design and websites that impress and deliver, don't you think?).<br/><br/>I'm self-taught in my blood, with ambition, focus, and methodology for all areas of my life.<br/><br/>Do I enjoy what I do? Almost nothing. I just can't imagine ever stopping creating something impressive in my life.<br/><br/>And to balance my minimalist and simple life, I have my little pink dot (my wife) by my side, and together with my skills and knowledge, we complete each other.",
+    "aboutShe": ""
+  },
+  "Testimonials": {
+    "pretitle": "Depoimentos",
+    "title": "O que dizem nossos clientes",
+    "cta": "Deixe seu depoimento"
+  },
+  "Questions": {
+    "pretitle": "Perguntas",
+    "title": "Tire suas dúvidas aqui",
+    "question": {
+      "1": { "question": "question", "anwser": "anwser" },
+      "2": { "question": "question", "anwser": "anwser" },
+      "3": { "question": "question", "anwser": "anwser" },
+      "4": { "question": "question", "anwser": "anwser" },
+      "5": { "question": "question", "anwser": "anwser" },
+      "6": { "question": "question", "anwser": "anwser" }
+    }
+  },
+  "Footer": {
+    "title": "Entre em contato e venha construir com <span>A Gente</span>",
+    "cta": "Marque sua análise gratuita",
+    "reason": "100% Gratuito, sem comprometimento necessário",
+    "end": "@ 2025 A Gente | Todos os direitos reservados",
+    "pagePolice": "Política de Privacidade"
+  }
+}

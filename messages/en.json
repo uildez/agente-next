@@ -1,0 +1,146 @@
+{
+  "Topbar": {
+    "title": "From Brazil to"
+  },
+  "Country": {
+    "brasil": "worldwide"
+  },
+  "Header": {
+    "available": "Available for collaborate",
+    "header": "Global UX Design agency digital partner for",
+    "animate": "entrepreneur",
+    "call": "Schedulle a call",
+    "cta": "See your work"
+  },
+  "Menu": {
+    "who": "Who we are",
+    "what": "What we do",
+    "why": "Why A Gente?",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "home": "Home",
+    "translate": "Change to PT-BR"
+  },
+  "Partnerships": {
+    "pretitle": "Partnerships",
+    "title": "Our Amazing Clients"
+  },
+  "Projects": {
+    "cta": "See all projects",
+    "project1": {
+      "title": "",
+      "subtitle": "",
+      "button": ""
+    },
+    "project2": {
+      "title": "",
+      "subtitle": "",
+      "button": ""
+    },
+    "project3": {
+      "title": "",
+      "subtitle": "",
+      "button": ""
+    },
+    "project4": {
+      "title": "",
+      "subtitle": "",
+      "button": ""
+    }
+  },
+  "Numbers": {
+    "number1": "years of experience",
+    "number2": "projects done",
+    "number3": "clients across the globe"
+  },
+  "Whyus": {
+    "topic1": {
+      "title": "More than a partner a force of change",
+      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+    },
+    "topic2": {
+      "title": "More than a partner a force of change",
+      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+    },
+    "topic3": {
+      "title": "More than a partner a force of change",
+      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+    }
+  },
+  "Services": {
+    "title": "Want to save money by <span>working with expert?</span>",
+    "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus.",
+    "services1": {
+      "title": "",
+      "subtitle": ""
+    },
+    "services2": {
+      "title": "",
+      "subtitle": ""
+    },
+    "services3": {
+      "title": "",
+      "subtitle": ""
+    },
+    "services4": {
+      "title": "",
+      "subtitle": ""
+    },
+    "services5": {
+      "title": "",
+      "subtitle": ""
+    },
+    "services6": {
+      "title": "",
+      "subtitle": ""
+    }
+  },
+  "About": {
+    "title": "Who we are?",
+    "text": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus.",
+    "aboutHe": "I'm Uildes. I'm a minimalist raised in design, with almost 10 years of experience in visual design, four years of web development, and diverse skills such as video editing, animation, and web optimization (the perfect package for design and websites that impress and deliver, don't you think?).<br/><br/>I'm self-taught in my blood, with ambition, focus, and methodology for all areas of my life.<br/><br/>Do I enjoy what I do? Almost nothing. I just can't imagine ever stopping creating something impressive in my life.<br/><br/>And to balance my minimalist and simple life, I have my little pink dot (my wife) by my side, and together with my skills and knowledge, we complete each other.",
+    "aboutShe": ""
+  },
+  "Testimonials": {
+    "pretitle": "Testimonials",
+    "title": "What your clients say",
+    "cta": "Give a Testimonial"
+  },
+  "Questions": {
+    "pretitle": "Questions",
+    "title": "Frequently asked questions",
+    "question": {
+      "1": {
+        "question": "question",
+        "anwser": "anwser"
+      },
+      "2": {
+        "question": "question",
+        "anwser": "anwser"
+      },
+      "3": {
+        "question": "question",
+        "anwser": "anwser"
+      },
+      "4": {
+        "question": "question",
+        "anwser": "anwser"
+      },
+      "5": {
+        "question": "question",
+        "anwser": "anwser"
+      },
+      "6": {
+        "question": "question",
+        "anwser": "anwser"
+      }
+    }
+  },
+  "Footer": {
+    "title": "Get in touch and come build with <span>A Gente</span>",
+    "cta": "Book a discovery call",
+    "reason": "100% free, no commitment needed",
+    "end": "@ 2025 A Gente | All Rights Reserved",
+    "pagePolice": "Privacy Policy"
+  }
+}

@@ -5,11 +5,90 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Nexa Regular */
+@font-face {
+  font-family: "nexa";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/a1f35e/0000000000000000773a5773/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2");
+}
+
+/* Nexa Italic */
+@font-face {
+  font-family: "nexa";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/3bb1d5/00000000000000007742b4a6/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2");
+}
+
+/* Nexa Bold */
+@font-face {
+  font-family: "nexa";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/0a14f1/0000000000000000773b2495/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2");
+}
+
+/* Nexa Bold Italic */
+@font-face {
+  font-family: "nexa";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/7d64aa/00000000000000007739ba67/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2");
+}
+
+/* STIX Two Text Regular */
+@font-face {
+  font-family: "stix-two-text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/d001ae/00000000000000007735caff/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2");
+}
+
+/* STIX Two Text Italic */
+@font-face {
+  font-family: "stix-two-text";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/90b930/00000000000000007735caf8/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2");
+}
+
+/* STIX Two Text Bold */
+@font-face {
+  font-family: "stix-two-text";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/5e9a4e/00000000000000007735cb02/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2");
+}
+
+/* STIX Two Text Bold Italic */
+@font-face {
+  font-family: "stix-two-text";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://use.typekit.net/af/5deb99/00000000000000007735cafa/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2");
+}
+
+
+@theme {
+  /* --color-*: initial; */
+  --color-pink: #FC00A2;
+  --color-yellow: #FDE700;
+  --color-gray-100: #F3F3F3;
+  --color-gray-500: #B4B4B4;
+  --color-black-agente: #101010;
+  
+  --font-*: initial;
+  --font-nexa: nexa, sans-serif;
+  --font-stix: stix-two-text, serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +98,26 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.depositions {
+  position: relative  
+}
+
+.depositions:before{
+  content: "";
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(90deg,rgba(16, 16, 16, 1) 0%, rgba(16, 16, 16, 0) 100%);
+}
+
+.depositions:after{
+  content: "";
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(90deg,rgba(16, 16, 16, 0) 0%, rgba(16, 16, 16, 1) 100%);
 }

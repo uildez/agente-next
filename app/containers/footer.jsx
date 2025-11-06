@@ -15,7 +15,7 @@ export const Footer = () => {
           <div className='flex flex-col items-start gap-4'>
             <h2 className='text-2xl lg:text-5xl font-bold w-full lg:w-3/5 text-white'>
               {t.rich('title', {
-                span: (chunks) => <span class='font-stix italic'>{chunks}</span>
+                span: (chunks) => <span className='font-stix italic'>{chunks}</span>
               })}
             </h2>
             <div className='flex flex-col lg:flex-row items-center gap-4 lg:gap-8 lg:mb-12'>

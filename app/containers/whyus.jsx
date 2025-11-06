@@ -1,11 +1,11 @@
 "use client"
 
-import { useRouter } from "next/navigation"
- 
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useScroll, useTransform, useMotionTemplate, motion } from 'framer-motion';
+import { useLocale } from "next-intl";
+import Image from "next/image";
 
 const ContentLine = ({ content }) => {
   const contentRef = useRef();
@@ -65,8 +65,24 @@ const ScrollText = ({ content }) => {
 const About = () => {
   const sheStarRef = useRef(null);
   const heStarRef = useRef(null);
-  const router = useRouter();
-  const locale = router.locale || "en";
+  const locale = useLocale();
+
+  const ref = useRef(null);
+  const refShe = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "80% start"], 
+  });
+
+  const scrollYProgressShe = useScroll({
+    target: refShe,
+    offset: ["start end", "80% start"],
+  }).scrollYProgress;
+
+  const x = useTransform(scrollYProgress, [0, 1], ["-100px", "0px"]);
+  const xShe = useTransform(scrollYProgressShe, [0, 1], ["100px", "0px"]);
+
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -122,11 +138,30 @@ const About = () => {
   return (
     <section
       id='sobre'
-      className="relative flex justify-center items-center h-[70vh] lg:h-[80vh] 2xl:h-[70vh] w-full bg-black-agente text-center px-6 lg:px-10 z-10"
+      className="relative flex justify-center items-center h-[70vh] lg:h-[80vh] 2xl:h-[70vh] w-full bg-black-agente text-center px-6 lg:px-10 z-10 overflow-hidden"
     >
       <div className="text-white text-xl lg:text-4xl 2xl:text-5xl leading-snug max-w-5xl mx-auto">
         <ScrollText content={contentMap[locale]} />
       </div>
+      <motion.img
+        ref={ref}
+        style={{ x }}
+        className="absolute w-[200px] left-0"
+        src="/images/mascots/he-up.webp"
+        alt="3D Uildes Mascot"
+        width={500}
+        height={500}
+      />
+
+      <motion.img
+        ref={refShe}
+        style={{ x: xShe }}
+        className="absolute w-[200px] right-0"
+        src="/images/mascots/she-up.webp"
+        alt="3D Ayalla Mascot"
+        width={500}
+        height={500}
+      />
     </section>
   );
 };

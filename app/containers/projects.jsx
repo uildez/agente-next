@@ -16,10 +16,10 @@ export const Projects = () => {
         </div>
         <div className='lg:col-span-2 lg:row-span-1 w-full bg-orange-300 min-h-[250px] lg:min-h-[300px] rounded-4xl'></div>
         <div className='relative lg:col-span-2 lg:row-span-1 w-full bg-purple-300 min-h-[250px] lg:min-h-[300px] rounded-4xl'>
-          <span className="absolute -bottom-12 -left-20 lg:-right-20 w-[120px] h-[120px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" />
+          <span className="absolute -bottom-12 right-[80%] lg:-right-20 w-[120px] h-[120px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" />
         </div>
       </div>
-      <Link className='flex w-fit relative items-center mt-12 mb-20 group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={""} title='Schedulle a Call'>
+      <Link className='hidden w-fit relative items-center mt-12 mb-20 group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={""} title='Schedulle a Call'>
         {t("cta")}
         <span className='absolute flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full'>
           <IoArrowUpOutline className='text-pink group-hover:rotate-90 group-hover:text-pink text-2xl rotate-45 transition-all duration-500 ease-in-out' />

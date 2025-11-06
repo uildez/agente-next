@@ -110,7 +110,7 @@ const Depositions = () => {
   const currentDepositions = t === 'pt' ? depositions : depositionsEn;
 
   return (
-    <div className='flex relative min-h-[30vh] gap-8 lg:gap-20 depositions'>
+    <div className='flex relative min-h-[30vh] gap-8 lg:gap-20'>
       <Carrousel items={currentDepositions} FAST_DURATION={FAST_DURATION} SLOW_DURATION={SLOW_DURATION} />
     </div>
   );

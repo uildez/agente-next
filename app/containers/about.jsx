@@ -22,12 +22,12 @@ export const About = () => {
 
   const sheClip = useTransform(
     scrollYProgress,
-    [1.0, 1.0],
+    [0.0, 0.5],
     ["inset(100% 0% 0% 0%)", "inset(0% 0% 0% 0%)"]
   );
 
   return (
-    <section ref={ref} className="relative h-[300vh]" id="about-us">
+    <section ref={ref} className="relative h-[300vh] hidden lg:flex" id="about-us">
       <div className="sticky top-0 flex flex-col lg:flex-row items-start justify-center h-screen px-8 pt-40 lg:pt-20 pb-40 gap-20 lg:px-20 2xl:px-40 overflow-hidden">
         <div className="relative w-full lg:w-2/5 h-[300px] lg:h-[600px] overflow-hidden rounded-4xl">
           <motion.div
@@ -63,17 +63,17 @@ export const About = () => {
 
           <div className="relative w-full h-auto min-h-[550px] overflow-hidden rounded-4xl">
             <motion.div
-              style={{ clipPath: sheClip }}
+              style={{ clipPath: heClip }}
               className="absolute inset-0 bg-yellow text-black-agente p-8 rounded-4xl lg:text-xl z-0"
             >
-              {t.rich("aboutShe", { br: () => <br /> })}
+              {t.rich("aboutHe", { br: () => <br /> })}
             </motion.div>
 
             <motion.div
-              style={{ clipPath: heClip }}
+              style={{ clipPath: sheClip }}
               className="absolute inset-0 bg-pink text-white p-8 rounded-4xl lg:text-xl z-10"
             >
-              {t.rich("aboutHe", { br: () => <br /> })}
+              {t.rich("aboutShe", { br: () => <br /> })}
             </motion.div>
           </div>
         </div>

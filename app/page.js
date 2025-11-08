@@ -11,7 +11,9 @@ import { Numbers } from "./containers/numbers"
 import { Whyagente } from "./containers/whyagente"
 import { Services } from "./containers/services"
 import { About } from "./containers/about"
+import { AboutMobile } from "./containers/aboutMobile"
 import { Testimonials } from "./containers/testimonials"
+import { PopupMenu } from "./components/popupMenu"
 import { Faq } from "./containers/faq"
 import { AnimatePresence, motion } from "framer-motion"
 import { HiLanguage } from "react-icons/hi2"
@@ -22,6 +24,7 @@ export default function Home() {
   const router = useRouter()
   const [locale, setLocale] = useState("")
   const [languageButton, setLanguageButton] = useState(false);
+  const [autoPopup, setAutoPopup] = useState(false)
 
   useEffect(() => {
     const cookieLocale = document.cookie.split("; ").find((row) => row.startsWith("MYNEXTAPP_LOCALE"))?.split("=")[1];
@@ -33,6 +36,11 @@ export default function Home() {
       document.cookie = `MYNEXTAPP_LOCALE=${browserLocale};`;
       router.refresh
     }
+
+    // 👇 Mostra o popup automaticamente ao carregar
+    setAutoPopup(true)
+    const timer = setTimeout(() => setAutoPopup(false), 3000) // some em 3s
+    return () => clearTimeout(timer)
   }, [router]);
 
   const changeLocale = (newLocale) => {
@@ -43,6 +51,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-nexa font-light">
+      <PopupMenu />
       <Topbar />
       <Header />
       <Video />
@@ -53,54 +62,31 @@ export default function Home() {
       <Whyagente />
       <Services />
       <About />
+      <AboutMobile />
       <Testimonials />
       <Faq />
       <div className="fixed bottom-4 right-4 block lg:hidden z-40">
-        {locale === "en" ? (
-          <button
-            className='relative bg-black-agente p-3 text-white cursor-pointer rounded-full hover:scale-105 hover:bg-pink text-2xl transition-all duration-500 ease-in-out'
-            onMouseEnter={() => setLanguageButton(true)}
-            onMouseLeave={() => setLanguageButton(false)}
-            onClick={() => changeLocale("pt")}
-          >
-            <AnimatePresence>
-              {languageButton && (
-                <motion.div
-                  initial={{ scale: 0.8, rotate: -3, opacity: 0, y: 10 }}
-                  animate={{ scale: 1, rotate: 0, opacity: 1, y: 0 }}
-                  exit={{ scale: 0.8, rotate: 3, opacity: 0, y: 10 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className='absolute -top-16 w-[250px] right-0 bg-white shadow-2xl rounded-2xl p-4 text-black text-sm font-semibold'
-                >
-                  Mudar idioma para PT-BR
-                </motion.div>
-              )}
-            </AnimatePresence>
-            <HiLanguage />
-          </button>
-        ) : (
-          <button
-            className='relative bg-black-agente p-3 text-white cursor-pointer rounded-full hover:scale-105 hover:bg-pink text-2xl transition-all duration-500 ease-in-out'
-            onMouseEnter={() => setLanguageButton(true)}
-            onMouseLeave={() => setLanguageButton(false)}
-            onClick={() => changeLocale("en")}
-          >
-            <AnimatePresence>
-              {languageButton && (
-                <motion.div
-                  initial={{ scale: 0.8, rotate: -3, opacity: 0, y: 10 }}
-                  animate={{ scale: 1, rotate: 0, opacity: 1, y: 0 }}
-                  exit={{ scale: 0.8, rotate: 3, opacity: 0, y: 10 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className='absolute -top-16 w-[250px] right-0 bg-white shadow-2xl rounded-2xl p-4 text-black text-sm font-semibold'
-                >
-                  Change language to EN
-                </motion.div>
-              )}
-            </AnimatePresence>
-            <HiLanguage />
-          </button>
-        )}
+        <button
+          className='relative bg-black-agente p-3 text-white cursor-pointer rounded-full hover:scale-105 hover:bg-pink text-2xl transition-all duration-500 ease-in-out'
+          onClick={() => changeLocale(locale === "en" ? "pt" : "en")}
+        >
+          <AnimatePresence>
+            {(languageButton || autoPopup) && (
+              <motion.div
+                initial={{ scale: 0.8, rotate: -3, opacity: 0, y: 10 }}
+                animate={{ scale: 1, rotate: 0, opacity: 1, y: 0 }}
+                exit={{ scale: 0.8, rotate: 3, opacity: 0, y: 10 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className='absolute -top-16 w-[250px] right-0 bg-white shadow-2xl rounded-2xl p-4 text-black text-sm font-semibold'
+              >
+                {locale === "en"
+                  ? "Mudar idioma para PT-BR"
+                  : "Change language to EN"}
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <HiLanguage />
+        </button>
       </div>
     </div>
   );

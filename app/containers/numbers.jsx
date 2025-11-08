@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
+import { useMotionValue, useTransform, animate, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
 
@@ -50,7 +50,7 @@ export const Numbers = () => {
 
       <div className="flex flex-col relative items-center lg:items-start ml-4 lg:ml-0">
         <AnimatedNumber to={80} />
-        <span className="absolute w-5 h-5 rounded-full -left-0 lg:-left-12 bg-pink" />
+        <span className="absolute w-5 h-5 rounded-full left-0 lg:-left-12 bg-pink" />
         <p className="font-stix italic text-2xl text-black-agente">{t("number3")}</p>
       </div>
     </div>

@@ -2,7 +2,8 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import { IoArrowUpOutline, IoLogoBehance, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
+import { FaBehance, FaLinkedinIn } from 'react-icons/fa'
+import { IoArrowUpOutline, IoLogoInstagram } from 'react-icons/io5'
 
 export const Footer = () => {
   const t = useTranslations("Footer");
@@ -45,10 +46,10 @@ export const Footer = () => {
               <IoLogoInstagram />
             </Link>
             <Link href="#" title="Acess your privacy policy" className='border-2 p-2 rounded-xl border-white group font-bold text-white text-3xl hover:scale-105 hover:rotate-6 transition-all duration-500 ease-in-out'>
-              <IoLogoBehance />
+              <FaBehance />
             </Link>
             <Link href="#" title="Acess your privacy policy" className='border-2 p-2 rounded-xl border-white group font-bold text-white text-3xl hover:scale-105 hover:rotate-6 transition-all duration-500 ease-in-out'>
-              <IoLogoLinkedin />
+              <FaLinkedinIn />
             </Link>
           </div>
         </div>

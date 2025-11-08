@@ -36,7 +36,7 @@ export const Header = () => {
         </span>
         <p className='text-black-agente font-nexa text-lg'>{t("available")}</p>
       </div>
-      <h1 className='text-black-agente text-center text-3xl lg:text-6xl w-full lg:w-2/5 font-nexa font-bold'>
+      <h1 className='text-black-agente text-center text-3xl lg:text-5xl w-full lg:w-3/6 font-nexa font-bold'>
         {t("header")}
         <div className="relative h-[60px] lg:h-20 -mt-2 text-3xl lg:text-6xl font-stix italic">
           <AnimatePresence mode="wait">
@@ -45,7 +45,7 @@ export const Header = () => {
               initial={{ y: "100%", opacity: 0, rotateX: -60 }}
               animate={{ y: "0%", opacity: 1, rotateX: 0 }}
               exit={{ y: "-100%", opacity: 0, rotateX: 60 }}
-              transition={{ duration: 0.7, ease: "easeInOut" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
               className="absolute inset-0 flex items-center justify-center bg-linear-to-r from-yellow-500 to-pink bg-clip-text text-transparent"
             >
               {words[currentWord]}

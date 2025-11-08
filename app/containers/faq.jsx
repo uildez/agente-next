@@ -20,57 +20,48 @@ export const Faq = () => {
       <h2 className='text-2xl lg:text-5xl w-3/4 lg:w-full pt-8 font-bold pb-8 text-center'>{t("title")}</h2>
 
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg">
+        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.1.question")}
-          <IoChevronDownSharp className="w-5 group-data-open:rotate-180" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
-        <DisclosurePanel className="text-gray-500">
+        <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.1.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg">
+        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.2.question")}
-          <IoChevronDownSharp className="w-5 group-data-open:rotate-180" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
-        <DisclosurePanel className="text-gray-500">
+        <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.2.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg">
+        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.3.question")}
-          <IoChevronDownSharp className="w-5 group-data-open:rotate-180" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
-        <DisclosurePanel className="text-gray-500">
+        <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.3.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg">
+        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.4.question")}
-          <IoChevronDownSharp className="w-5 group-data-open:rotate-180" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
-        <DisclosurePanel className="text-gray-500">
+        <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.4.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg">
+        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.5.question")}
-          <IoChevronDownSharp className="w-5 group-data-open:rotate-180" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
-        <DisclosurePanel className="text-gray-500">
+        <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.5.anwser")}
-        </DisclosurePanel>
-      </Disclosure>
-      <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full text-lg">
-          {t("question.6.question")}
-          <IoChevronDownSharp className="w-5 group-data-open:rotate-180" />
-        </DisclosureButton>
-        <DisclosurePanel className="text-gray-500">
-          {t("question.6.anwser")}
         </DisclosurePanel>
       </Disclosure>
     </div>

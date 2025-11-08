@@ -3,13 +3,13 @@
     "title": "From Brazil to"
   },
   "Country": {
-    "brasil": "worldwide"
+    "brasil": "Worldwide"
   },
   "Header": {
     "available": "Available for collaborate",
-    "header": "Global UX Design agency digital partner for",
+    "header": "A GENTE is the global creative agency turning ideas into digital presence for",
     "animate": "entrepreneur",
-    "call": "Schedulle a call",
+    "call": "Book a chat",
     "cta": "See your work"
   },
   "Menu": {
@@ -55,51 +55,52 @@
   },
   "Whyus": {
     "topic1": {
-      "title": "More than a partner a force of change",
-      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+      "title": "Competitive Value",
+      "subtitle": "It all starts with the essentials: smart strategy, clear purpose, and fair investment. We believe true value lies in delivering consistent results with balance and vision."
     },
     "topic2": {
-      "title": "More than a partner a force of change",
-      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+      "title": "Communication",
+      "subtitle": "We grow through real connections. Our communication bridges brands and people."
     },
     "topic3": {
-      "title": "More than a partner a force of change",
-      "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus."
+      "title": "Quality delivery",
+      "subtitle": "Every delivery is more than a project, it’s an extension of our purpose. We blend aesthetics, strategy, and care in every detail, because results should move people as much as they perform."
     }
   },
   "Services": {
-    "title": "Want to save money by <span>working with expert?</span>",
-    "subtitle": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus.",
+    "title": "Services that build <span>strong brands</span>",
+    "subtitle": "From strategy to design. We take care of every detail so your brand stands out and performs as it should.",
     "services1": {
-      "title": "",
-      "subtitle": ""
+      "title": "Social Media",
+      "subtitle": "We turn social media into real results. From management to content creation, copywriting and influencer strategy. All with purpose.",
+      "keyWords": "Social Media Management, Content creation, Copywriting, Digital strategy, Instagram marketing, Storytelling"
     },
     "services2": {
-      "title": "",
-      "subtitle": ""
+      "title": "Design",
+      "subtitle": "We create visual identities and digital assets that reflect your brand’s essence and elevate its presence online.",
+      "keyWords": "Branding, Visual Identity, Logo Design, Graphic Design, Digital Assets, Design for social media, Rebranding, Social Media Design"
     },
     "services3": {
-      "title": "",
-      "subtitle": ""
+      "title": "Video Editing",
+      "subtitle": "Dynamic cuts, the right rhythm, and modern aesthetics. Content that captures attention and converts.",
+      "keyWords": "Video Editing, Motion Design, Transitions, Storytelling video, Short-form Content, Reels editing, TikTok videos"
     },
     "services4": {
-      "title": "",
-      "subtitle": ""
+      "title": "Web",
+      "subtitle": "Full development, SEO and performance optimization. A beautiful, fast website ready to sell.",
+      "keyWords": "React Development, WordPress, Elementor, Responsive design, SEO optimization, Website performance, Page speed, E-commerce"
     },
     "services5": {
-      "title": "",
-      "subtitle": ""
-    },
-    "services6": {
-      "title": "",
-      "subtitle": ""
+      "title": "UI/UX",
+      "subtitle": "Delightful experiences. Functional layouts and prototypes that combine beauty and usability.",
+      "keyWords": "UI design, UX design, Prototypes, User interface, Wireframes, Conversion optimization"
     }
   },
   "About": {
     "title": "Who we are?",
-    "text": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus.",
-    "aboutHe": "I'm Uildes. I'm a minimalist raised in design, with almost 10 years of experience in visual design, four years of web development, and diverse skills such as video editing, animation, and web optimization (the perfect package for design and websites that impress and deliver, don't you think?).<br/><br/>I'm self-taught in my blood, with ambition, focus, and methodology for all areas of my life.<br/><br/>Do I enjoy what I do? Almost nothing. I just can't imagine ever stopping creating something impressive in my life.<br/><br/>And to balance my minimalist and simple life, I have my little pink dot (my wife) by my side, and together with my skills and knowledge, we complete each other.",
-    "aboutShe": ""
+    "text": "We created A GENTE because we believe that good design begins with empathy: for the people, the stories, and the brands that deserve to be seen. We don't just create projects; we create meaning, together.",
+    "aboutHe": "I’m Uildes. A minimalist raised by design, with almost 10 years of experience in visual design, four years in web development, and a mix of creative skills. From video editing and animation to web optimization. (The perfect combo for brands that want to impress and perform, don’t you think?) <br></br><br></br>I’m self-taught by nature, driven by ambition, focus, and a constant need to refine everything I do. Do I enjoy what I do? Absolutely. I can’t imagine a life where I’m not creating something meaningful. <br></br><br></br>And to balance my minimalist and simple side, I have my little pink dot ✦ (my wife). <br></br><br></br>Together, we blend creativity and strategy, the harmony that keeps A GENTE alive.",
+    "aboutShe": "I’m Ayalla. The voice and the vision behind every detail that turns an idea into emotion. I’ve always been driven by what’s visual. Colors, shapes, and textures fascinate me, they’re how I express myself. <br></br><br></br>I believe aesthetics are more than appearance: they’re emotion, intention, and the spark that makes someone stop and feel something real. <br></br><br></br>I’m drawn to what’s light, but also to what holds depth.  To the contrast between the simple and the unforgettable. <br></br><br></br>And among all those tones and shades, there’s him: a huge point of happiness in my life (Uildes). He’s the one who grounds the beautiful chaos of my ideas and turns imagination into reality. Together, we’re the balance between emotion and structure. The essence of what A Gente truly is."
   },
   "Testimonials": {
     "pretitle": "Testimonials",
@@ -111,28 +112,24 @@
     "title": "Frequently asked questions",
     "question": {
       "1": {
-        "question": "question",
-        "anwser": "anwser"
+        "question": "What kind of businesses do you usually work with?",
+        "anwser": "Mostly creative professionals, service-based brands, and digital businesses. But honestly, if your project has soul, we’re in."
       },
       "2": {
-        "question": "question",
-        "anwser": "anwser"
+        "question": "Do you also manage social media and content strategy?",
+        "anwser": "Yes. Design and communication walk together here. We create visuals and voice for your brand."
       },
       "3": {
-        "question": "question",
-        "anwser": "anwser"
+        "question": "Do you offer website redesigns?",
+        "anwser": "Yes. We analyze your current structure, improve usability, and redesign the interface to enhance both performance and perception."
       },
       "4": {
-        "question": "question",
-        "anwser": "anwser"
+        "question": "Do you work with startups or only established companies?",
+        "anwser": "We work with both. Our process adapts to your stage. From first ideas to full-scale brands, we help you build something that makes sense and looks good."
       },
       "5": {
-        "question": "question",
-        "anwser": "anwser"
-      },
-      "6": {
-        "question": "question",
-        "anwser": "anwser"
+        "question": "How do you handle different time zones?",
+        "anwser": "We’re used to working with clients abroad. Clear communication and smart tools keep us connected and on time."
       }
     }
   },

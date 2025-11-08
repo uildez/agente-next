@@ -27,7 +27,7 @@ export const Topbar = () => {
   }, [])
 
   return (
-    <div className='hidden lg:flex items-center justify-between w-full py-4 px-8 lg:px-20'>
+    <div className='hidden lg:flex items-center justify-between w-full py-4 px-8 lg:px-20' id="home">
       <div className='flex flex-col lg:flex-row items-start lg:items-center gap-4'>
         <span>{t2("title")}</span>
         <div className='flex items-center gap-2 shadow-lg rounded-full p-2 pr-4 bg-white'>

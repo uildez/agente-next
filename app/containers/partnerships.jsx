@@ -70,7 +70,7 @@ export const Partnerships = () => {
         <p className='text-black-agente font-nexa font-light text-lg'>{t("pretitle")}</p>
       </div>
 
-      <h2 className='text-2xl lg:text-5xl pt-8 font-bold'>{t("title")}</h2>
+      <h2 className='text-2xl lg:text-5xl pt-4 lg:pt-8 font-bold'>{t("title")}</h2>
 
       <main className='relative w-full py-12 lg:py-20'>
         <motion.div

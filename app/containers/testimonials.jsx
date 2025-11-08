@@ -18,7 +18,7 @@ export const Testimonials = () => {
             </span>
             <p className='text-white font-nexa text-lg'>{t("pretitle")}</p>
           </div>
-          <h2 className='text-2xl lg:text-5xl text-white font-light'>{t("title")}</h2>
+          <h2 className='text-2xl lg:text-5xl text-white font-light text-center lg:text-left'>{t("title")}</h2>
         </div>
 
         <Link className='hidden lg:flex relative items-center group gap-4 text-white bg-white/50 px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={""} title='Schedulle a Call'>

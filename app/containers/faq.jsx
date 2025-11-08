@@ -17,48 +17,48 @@ export const Faq = () => {
         <p className='text-black-agente font-nexa font-light text-lg'>{t("pretitle")}</p>
       </div>
 
-      <h2 className='text-2xl lg:text-5xl w-3/4 lg:w-full pt-8 font-bold pb-8 text-center'>{t("title")}</h2>
+      <h2 className='text-2xl lg:text-5xl w-full pt-8 font-bold pb-8 text-center'>{t("title")}</h2>
 
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
+        <DisclosureButton className="group flex text-left items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 leading-5 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.1.question")}
-          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white text-2xl lg:text-4xl min-w-[30px] min-h-[30px] lg:w-[30px] lg:h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
         <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.1.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
+        <DisclosureButton className="group flex text-left items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 leading-5 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.2.question")}
-          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white text-2xl lg:text-4xl min-w-[30px] min-h-[30px] lg:w-[30px] lg:h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
         <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.2.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
+        <DisclosureButton className="group flex text-left items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 leading-5 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.3.question")}
-          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white text-2xl lg:text-4xl min-w-[30px] min-h-[30px] lg:w-[30px] lg:h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
         <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.3.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
+        <DisclosureButton className="group flex text-left items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 leading-5 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.4.question")}
-          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white text-2xl lg:text-4xl min-w-[30px] min-h-[30px] lg:w-[30px] lg:h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
         <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.4.anwser")}
         </DisclosurePanel>
       </Disclosure>
       <Disclosure>
-        <DisclosureButton className="group flex items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
+        <DisclosureButton className="group flex text-left items-center justify-between px-4 py-4 lg:py-8 gap-2 w-full border-gray-300/50 border-b-2 leading-5 text-lg cursor-pointer group hover:border-pink transition-all duration-500 ease-in-out">
           {t("question.5.question")}
-          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white w-[30px] h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
+          <IoChevronDownSharp className="group-data-open:rotate-180 group-hover:bg-pink group-hover:text-white text-2xl lg:text-4xl min-w-[30px] min-h-[30px] lg:w-[30px] lg:h-[30px] p-2 rounded-4xl transition-all duration-500 ease-in-out" />
         </DisclosureButton>
         <DisclosurePanel className="bg-pink p-8 rounded-3xl mt-4 text-white w-full">
           {t("question.5.anwser")}

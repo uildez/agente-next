@@ -19,7 +19,7 @@ export const Footer = () => {
               })}
             </h2>
             <div className='flex flex-col lg:flex-row items-center gap-4 lg:gap-8 lg:mb-12'>
-              <Link className='flex relative items-center group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={""} title='Schedulle a Call'>
+              <Link className='flex relative items-center group gap-4 text-white text-center lg:text-left bg-black-agente px-4 lg:px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={""} title='Schedulle a Call'>
                 {t("cta")}
                 <span className='absolute flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full'>
                   <IoArrowUpOutline className='text-pink group-hover:rotate-90 group-hover:text-pink text-2xl rotate-45 transition-all duration-500 ease-in-out' />

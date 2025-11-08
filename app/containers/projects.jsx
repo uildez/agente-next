@@ -31,10 +31,9 @@ export const Projects = () => {
         <motion.span
           ref={ref}
           style={{ rotate }}
-          className="absolute top-[25vw] -left-8 w-[120px] h-[120px] bg-cover bg-[url('/svg/she-star.svg')]"
+          className="absolute top-40 lg:top-[25vw] -left-8 w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] 2xl:w-[200px] 2xl:h-[200px] z-20 bg-cover bg-[url('/svg/she-star.svg')]"
         />
 
-        {/* --- Seção 1 --- */}
         <div className="relative lg:col-span-full row-span-1 w-full min-h-[250px] lg:min-h-[600px] rounded-4xl overflow-hidden">
           <video
             preload="none"
@@ -48,7 +47,6 @@ export const Projects = () => {
           </video>
         </div>
 
-        {/* --- Seção 2 --- */}
         <div className="relative lg:col-span-1 lg:row-span-2 w-full min-h-[250px] lg:min-h-[500px] rounded-4xl overflow-hidden">
           <video
             preload="none"
@@ -62,7 +60,6 @@ export const Projects = () => {
           </video>
         </div>
 
-        {/* --- Seção 3 --- */}
         <div className="relative lg:col-span-2 lg:row-span-1 w-full min-h-[250px] lg:min-h-[500px] rounded-4xl overflow-hidden">
           <video
             preload="none"
@@ -76,7 +73,6 @@ export const Projects = () => {
           </video>
         </div>
 
-        {/* --- Seção 4 --- */}
         <div className="relative lg:col-span-2 lg:row-span-1 w-full min-h-[250px] lg:min-h-[500px] rounded-4xl overflow-hidden">
           <video
             preload="none"
@@ -92,7 +88,7 @@ export const Projects = () => {
         <motion.span
           ref={refShe}
           style={{ rotate: rotateShe }}
-          className="absolute bottom-12 right-[80%] lg:-right-8 w-[120px] h-[120px] bg-cover bg-[url('/svg/he-star.svg')]"
+          className="absolute bottom-12 -right-12 lg:-right-8 w-[120px] h-[120px] 2xl:w-[200px] 2xl:h-[200px] bg-cover bg-[url('/svg/he-star.svg')]"
         />
       </div>
 

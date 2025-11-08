@@ -55,20 +55,20 @@
   },
   "Whyus": {
     "topic1": {
-      "title": "Valor <span>Competitivo</span>",
+      "title": "Valor <br></br><span>Competitivo</span>",
       "subtitle": "Tudo começa com o essencial: estratégia inteligente, propósito claro e preço que faz sentido. Acreditamos que o verdadeiro valor está em entregar resultados consistentes, com investimento justo e visão de longo prazo."
     },
     "topic2": {
-      "title": "Comunicação <span>simplificada</span>",
+      "title": "Comunicação <br></br><span>simplificada</span>",
       "subtitle": "Crescemos através de conexões reais. Nossa comunicação é feita para aproximar marcas e pessoas, com empatia, clareza e autenticidade. Porque diálogo também é estratégia."
     },
     "topic3": {
-      "title": "Entrega de <span>qualidade</span>",
+      "title": "Entrega de <br></br><span>qualidade</span>",
       "subtitle": "Cada entrega é mais do que um projeto: é uma extensão do nosso propósito. Unimos estética, estratégia e cuidado em cada detalhe. Porque o resultado precisa emocionar tanto quanto performar."
     }
   },
   "Services": {
-    "title": "Serviços que constroem <span>marcas fortes</span>",
+    "title": "Serviços que constroem <br></br><span>marcas fortes</span>",
     "subtitle": "Da estratégia ao design nós cuidamos de cada detalhe para que sua marca se destaque e funcione como deve.",
     "services1": {
       "title": "Social Media",

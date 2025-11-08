@@ -5,7 +5,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useScroll, useTransform, useMotionTemplate, motion } from 'framer-motion';
 import { useLocale } from "next-intl";
-import Image from "next/image";
 
 const ContentLine = ({ content }) => {
   const contentRef = useRef();
@@ -38,19 +37,19 @@ const ContentLine = ({ content }) => {
           width: '100%',
           textAlign: 'center'
         }}
-        className="highlighted-text"
+        className="text-md lg:text-2xl 2xl:text-3xl"
         data-text={content}
       >
         {content}
       </motion.span>
-      <span className="static-text opacity-20 block text-center">{content}</span>
+      <span className="static-text opacity-20 block text-center text-md lg:text-2xl 2xl:text-3xl">{content}</span>
     </span>
   );
 };
 
-const ScrollText = ({ content }) => {
+const ScrollText = ({ content, style }) => {
   return (
-    <div className="outer flex justify-center items-center">
+    <div className={`outer justify-center items-center ${style}`}>
       <div className="inner">
         <p className="text-center">
           {content.map((item, index) => (
@@ -140,19 +139,53 @@ const About = () => {
       <>about <span className='text-pink italic'>us, we make it happen.</span></>,
     ],
   };
+  
+  const contentMapMobile = {
+    pt: [
+      <>“A Gente” significa “nós”.</>,
+      <>E é exatamente sobre isso:</>,
+      <>colaboração, parceria e propósito.</>,
+      <>Nascemos de um </>,
+      <><span ref={sheStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/she-star.svg')] mx-2" /><span className='text-pink italic'>casal do marketing</span></>,
+      <>que acredita que o </>,
+      <>digital pode ser humano.</>,
+      <>Queremos fazer as </>,
+      <><span ref={heStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" /> <span className='text-yellow italic'>coisas de um jeito diferente</span>, </>,
+      <>entregando estratégia</>,
+      <> e estética com o</>,
+      <>cuidado que o </>,
+      <>mercado esqueceu.</>,
+      <>Porque quando a gente</>,
+      <>acredita em algo,</>,
+      <><span className='text-pink italic'>a gente faz acontecer.</span></>,
+    ],
+    en: [
+      <>“A Gente” means “us”.</>,
+      <>And that’s what we’re all about:</>,
+      <>collaboration, partnership, and purpose.</>,
+      <>We’re a <span ref={sheStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/she-star.svg')] mx-2" /><span className='text-pink italic'>creative couple</span></>,
+      <>who make digital feel human.</>,
+      <>We do things differently, </>,
+      <><span ref={heStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" /> <span className='text-yellow italic'>blending strategy and beauty</span>, </>,
+      <>with the care the market forgot.</>,
+      <>Because when it’s</>,
+      <>about <span className='text-pink italic'>us, we make it happen.</span></>,
+    ],
+  };
 
   return (
     <section
       id='sobre'
-      className="relative flex justify-center items-center h-[70vh] lg:h-[80vh] 2xl:h-[70vh] w-full bg-black-agente text-center px-6 lg:px-10 z-10 overflow-hidden"
+      className="relative flex justify-center items-center h-[80vh] lg:h-[80vh] 2xl:h-[70vh] w-full bg-black-agente text-center px-6 lg:px-10 z-10 overflow-hidden"
     >
-      <div className="text-white text-xl lg:text-4xl 2xl:text-4xl leading-snug w-2/4">
-        <ScrollText content={contentMap[locale]} />
+      <div className="text-white text-xl lg:text-4xl 2xl:text-4xl leading-snug w-full lg:w-2/4">
+        <ScrollText content={contentMap[locale]} style="hidden lg:flex"/>
+        <ScrollText content={contentMapMobile[locale]} style="flex lg:hidden"/>
       </div>
       <motion.img
         ref={ref}
         style={{ x }}
-        className="absolute w-[200px] left-0"
+        className="absolute w-[100px] rotate-90 lg:rotate-0 lg:w-[200px] -top-8 lg:top-auto lg:left-0"
         src="/images/mascots/he-up.webp"
         alt="3D Uildes Mascot"
         width={500}
@@ -162,7 +195,7 @@ const About = () => {
       <motion.img
         ref={refShe}
         style={{ x: xShe }}
-        className="absolute w-[200px] right-0"
+        className="absolute w-[100px] rotate-90 lg:rotate-0 lg:w-[200px] -bottom-8 lg:bottom-auto lg:right-0"
         src="/images/mascots/she-up.webp"
         alt="3D Ayalla Mascot"
         width={500}

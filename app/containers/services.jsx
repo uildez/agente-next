@@ -8,10 +8,11 @@ export const Services = () => {
   return (
     <div className='flex flex-col w-full pt-20' id="services">
       <div className='flex flex-col relative w-full lg:px-20 2xl:px-40 overflow-hidden'>
-        <div className='flex flex-col justify-between w-full lg:h-[800px] rounded-4xl bg-black-agente p-12'>
-          <div className='flex flex-col lg:flex-row items-start justify-between w-full lg:h-[600px] rounded-4xl bg-black-agente p-12'>
-            <h2 className='text-2xl lg:text-5xl w-fullç lg:w-2/5 text-white text-center lg:text-left'>
+        <div className='flex flex-col justify-between w-full h-[800px] lg:h-[800px] rounded-4xl bg-black-agente p-8 lg:p-12'>
+          <div className='flex flex-col lg:flex-row items-start justify-between w-full lg:h-[600px] rounded-4xl bg-black-agente p-0 lg:p-12'>
+            <h2 className='text-2xl lg:text-5xl w-full lg:w-3/4 text-white text-center lg:text-left'>
               {t.rich('title', {
+                br: () => <br />,
                 span: (chunks) => <span className='font-stix italic'>{chunks}</span>
               })}
             </h2>

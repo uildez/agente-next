@@ -20,55 +20,58 @@ export const Whyagente = () => {
     <div
       ref={pathRef}
       id="why-us"
-      className="relative grid lg:grid-rows-3 gap-12 w-full pt-20 px-8 lg:px-20 2xl:px-40 overflow-hidden"
+      className="relative grid lg:grid-rows-3 gap-12 w-full pt-40 lg:pt-20 px-8 lg:px-20 2xl:px-40 overflow-hidden"
     >
       <motion.div
-        className="justify-self-start flex flex-col items-start justify-center relative gap-4 rounded-3xl p-8 lg:pr-60 bg-pink text-white h-auto lg:h-[350px] w-full lg:w-2/4 z-10 group"
+        className="justify-self-start flex flex-col items-start justify-center relative gap-4 rounded-3xl p-8 pr-8 lg:pr-60 bg-pink text-white pt-32 lg:pt-0 h-auto lg:h-[350px] w-full lg:w-2/4 z-10 group"
         initial={{ scale: 0, opacity: 0, rotateX: -60 }}
         whileInView={{ scale: 1, opacity: 1, rotateX: 0 }}
         transition={{ type: "spring", animationDelay: 1, stiffness: 300, damping: 25, duration: 0.5, ease: "easeInOut" }}
       >
-        <h3 className="font-bold text-5xl text-left">
+        <h3 className="font-bold text-3xl lg:text-5xl text-left">
           {t.rich('topic1.title', {
+            br: () => <br />,
             span: (chunks) => <span className='font-stix italic'>{chunks}</span>
           })}
         </h3>
         <p className="font-nexa font-light">{t("topic1.subtitle")}</p>
-        <Image className="absolute w-[300px] -right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/he-money.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+        <Image className="absolute w-[200px] lg:w-[300px] left-4 -top-20 lg:top-auto lg:-right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/he-money.webp"} alt="3D Uildes Mascot" width={500} height={500} />
       </motion.div>
 
       <motion.div
-        className="justify-self-end flex flex-col items-end justify-center relative gap-4 rounded-3xl p-8 lg:pl-60 bg-yellow text-black-agente h-auto lg:h-[350px] w-full lg:w-2/4 z-10 group"
+        className="justify-self-end flex flex-col items-start lg:items-end justify-center relative gap-4 rounded-3xl p-8 pl-8 lg:pl-60 bg-yellow text-black-agente pt-32 lg:pt-0 h-auto lg:h-[350px] w-full lg:w-2/4 z-10 group"
         initial={{ scale: 0, opacity: 0, rotateX: -60 }}
         whileInView={{ scale: 1, opacity: 1, rotateX: 0 }}
         transition={{ type: "spring", animationDelay: 1, stiffness: 300, damping: 25, duration: 0.5, ease: "easeInOut" }}
       >
-        <h3 className="font-bold text-5xl text-right">
+        <h3 className="font-bold text-3xl lg:text-5xl text-left lg:text-right">
           {t.rich('topic2.title', {
+            br: () => <br />,
             span: (chunks) => <span className='font-stix italic'>{chunks}</span>
           })}
         </h3>
-        <p className="font-nexa font-light text-right">{t("topic2.subtitle")}</p>
-        <Image className="absolute w-[300px] -left-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/she-talk.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+        <p className="font-nexa font-light text-left lg:text-right">{t("topic2.subtitle")}</p>
+        <Image className="absolute w-[200px] lg:w-[300px] left-4 -top-20 lg:top-auto lg:-left-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/she-talk.webp"} alt="3D Uildes Mascot" width={500} height={500} />
       </motion.div>
 
       <motion.div
-        className="justify-self-start flex flex-col items-start justify-center relative gap-4 rounded-3xl p-8 lg:pr-60 bg-pink text-white h-auto lg:h-[350px] w-full lg:w-2/4 z-10 group"
+        className="justify-self-start flex flex-col items-start justify-center relative gap-4 rounded-3xl p-8 pr-8 lg:pr-60 bg-pink text-white pt-32 lg:pt-0 h-auto lg:h-[350px] w-full lg:w-2/4 z-10 group"
         initial={{ scale: 0, opacity: 0, rotateX: -60 }}
         whileInView={{ scale: 1, opacity: 1, rotateX: 0 }}
         transition={{ type: "spring", animationDelay: 1, stiffness: 300, damping: 25, duration: 0.5, ease: "easeInOut" }}
       >
-        <h3 className="font-bold text-5xl text-left">
+        <h3 className="font-bold text-3xl lg:text-5xl text-left">
           {t.rich('topic3.title', {
+            br: () => <br />,
             span: (chunks) => <span className='font-stix italic'>{chunks}</span>
           })}
         </h3>
         <p className="font-nexa font-light">{t("topic3.subtitle")}</p>
-        <Image className="absolute w-[300px] -right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/quality.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+        <Image className="absolute w-[200px] lg:w-[300px] left-4 -top-20 lg:top-auto lg:-right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/quality.webp"} alt="3D Uildes Mascot" width={500} height={500} />
       </motion.div>
 
       {/* SVG */}
-      <svg className="absolute bottom-0" viewBox="0 0 1917 998" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="absolute bottom-0 hidden lg:block" viewBox="0 0 1917 998" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           style={{
             pathLength,

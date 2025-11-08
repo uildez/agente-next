@@ -55,20 +55,20 @@
   },
   "Whyus": {
     "topic1": {
-      "title": "Competitive Value",
+      "title": "Competitive <br></br><span>Value</span>",
       "subtitle": "It all starts with the essentials: smart strategy, clear purpose, and fair investment. We believe true value lies in delivering consistent results with balance and vision."
     },
     "topic2": {
-      "title": "Communication",
+      "title": "Easy <br></br><span>Communication</span>",
       "subtitle": "We grow through real connections. Our communication bridges brands and people."
     },
     "topic3": {
-      "title": "Quality delivery",
+      "title": "Quality <br></br><span>delivery</span>",
       "subtitle": "Every delivery is more than a project, it’s an extension of our purpose. We blend aesthetics, strategy, and care in every detail, because results should move people as much as they perform."
     }
   },
   "Services": {
-    "title": "Services that build <span>strong brands</span>",
+    "title": "Services that build <br></br><span>strong brands</span>",
     "subtitle": "From strategy to design. We take care of every detail so your brand stands out and performs as it should.",
     "services1": {
       "title": "Social Media",

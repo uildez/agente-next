@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from 'react';
 import useMeasure from 'react-use-measure';
 import { animate, motion, useMotionValue } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { useContact } from '../context/contactContext';
 
 const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
   const [duration, setDuration] = useState(FAST_DURATION);
@@ -14,6 +15,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
   const [rerender, setRerender] = useState(false);
   const [ready, setReady] = useState(false);
   const t = useTranslations("Services")
+  const { openPopup } = useContact();
 
   const controlsRef = useRef(null);
 
@@ -65,7 +67,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
       }}
       className='flex gap-4 lg:gap-16 mb-16 lg:mb-0'
     >
-      <div className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-social-media.webp')]">
+      <div onClick={openPopup} className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-social-media.webp')]">
         <div className='flex flex-col items-start justify-between w-full'>
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services1.title")}
@@ -87,7 +89,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-design.webp')]">
+      <div onClick={openPopup} className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-design.webp')]">
         <div className='flex flex-col items-start justify-between w-full'>
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services2.title")}
@@ -109,7 +111,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-video-editing.webp')]">
+      <div onClick={openPopup} className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-video-editing.webp')]">
         <div className='flex flex-col items-start justify-between w-full'>
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services3.title")}
@@ -131,7 +133,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-web.webp')]">
+      <div onClick={openPopup} className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-web.webp')]">
         <div className='flex flex-col items-start justify-between w-full'>
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services4.title")}
@@ -153,7 +155,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-ux.webp')]">
+      <div onClick={openPopup} className="flex flex-col min-w-[300px] lg:min-w-[500px] lg:max-w-[500px] min-h-[450px] gap-4 w-full h-full shadow-md bg-pink border-white/50 border-2 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8 group hover:-translate-y-4 transition-all duration-500 ease-in-out bg-contain lg:bg-cover bg-no-repeat bg-position-[center_bottom_-2em] lg:bg-position-[center_top_1rem] bg-[url('/images/bg-ux.webp')]">
         <div className='flex flex-col items-start justify-between w-full'>
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services5.title")}

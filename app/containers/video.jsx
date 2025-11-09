@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export const Video = () => {
+export const Video = ({ onMouseEnter, onMouseLeave }) => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -18,6 +18,8 @@ export const Video = () => {
 
   return (
     <section
+    onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       ref={ref}
       className="relative flex justify-center items-center w-full -mt-32"
     >

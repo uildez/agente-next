@@ -66,7 +66,7 @@ export const Header = () => {
             <IoArrowUpOutline className='text-pink group-hover:rotate-90 text-2xl rotate-45 transition-all duration-500 ease-in-out' />
           </span>
         </div>
-        <Link className='relative group' href={"#projects"} title='See your work'>
+        <Link className='relative group' href={"#portfolio"} title='See your work'>
           {t("cta")}
           <span className='absolute -bottom-2 h-0.5 w-0 group-hover:w-full left-0 bg-black-agente transition-all duration-500 ease-in-out' />
         </Link>

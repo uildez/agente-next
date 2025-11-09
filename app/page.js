@@ -15,6 +15,7 @@ import { About } from "./containers/about"
 import { AboutMobile } from "./containers/aboutMobile"
 import { Testimonials } from "./containers/testimonials"
 import { PopupMenu } from "./components/popupMenu"
+import { FloatingTooltip } from "./components/floatingTooltip"
 import { Faq } from "./containers/faq"
 import { AnimatePresence, motion } from "framer-motion"
 import { HiLanguage } from "react-icons/hi2"
@@ -52,16 +53,43 @@ export default function Home() {
     router.refresh()
   }
 
+  const [tooltip, setTooltip] = useState({ text: "", position: { x: 0, y: 0 } });
+
+  const handleMouseEnter = (text) => (e) => {
+    setTooltip({ text, position: { x: e.clientX, y: e.clientY } });
+  };
+
+  const handleMouseMove = (e) => {
+    setTooltip((prev) => ({
+      ...prev,
+      position: { x: e.clientX, y: e.clientY },
+    }));
+  };
+
+  const handleMouseLeave = () => {
+    setTooltip({ text: "", position: { x: 0, y: 0 } });
+  };
+
   return (
     <ContactProvider>
-      <div className="flex flex-col min-h-screen items-center justify-center font-nexa font-light">
+      <div className="flex flex-col min-h-screen items-center justify-center font-nexa font-light" onMouseMove={handleMouseMove}>
         <PopupMenu />
         <Topbar />
         <Header />
-        <Video />
+        <Video
+          onMouseEnter={handleMouseEnter(locale === "en"
+                    ? "Continue a nadar"
+                    : "Keep scrolling")}
+          onMouseLeave={handleMouseLeave}
+        />
         <Whyus />
         <Partnerships />
-        <Projects />
+        <Projects
+          onMouseEnter={handleMouseEnter(locale === "en"
+                    ? "Clique no botão"
+                    : "Click in button")}
+          onMouseLeave={handleMouseLeave}
+        />
         <Numbers />
         <Whyagente />
         <Services />
@@ -93,6 +121,7 @@ export default function Home() {
             <HiLanguage />
           </button>
         </div>
+        <FloatingTooltip text={tooltip.text} position={tooltip.position} />
       </div>
     </ContactProvider>
   );

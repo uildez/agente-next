@@ -6,7 +6,7 @@ import { useRef } from 'react'
 import { IoArrowUpOutline } from 'react-icons/io5'
 import { useTranslations } from 'use-intl'
 
-export const Projects = () => {
+export const Projects = ({ onMouseEnter, onMouseLeave }) => {
   const t = useTranslations("Projects")
 
   const ref = useRef(null)
@@ -26,7 +26,11 @@ export const Projects = () => {
   const rotateShe = useTransform(scrollYProgressShe, [0, 1], ["150deg", "0deg"])
 
   return (
-    <div className="flex flex-col items-center overflow-hidden lg:overflow-visible w-full" id="portfolio">
+    <div
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      className="flex flex-col items-center overflow-hidden lg:overflow-visible w-full" id="portfolio"
+    >
       <div className="relative grid grid-cols-1 lg:grid-cols-4 grid-rows-4 lg:grid-rows-[auto_1fr_1fr] w-full h-full gap-8 pt-8 lg:pt-20 px-8 lg:px-20 2xl:px-40 overflow-hidden">
         <motion.span
           ref={ref}
@@ -51,7 +55,7 @@ export const Projects = () => {
                 span: (chunks) => <span className='font-stix italic'>{chunks}</span>
               })}</h3>
             <p className='w-3/4 text-base lg:text-xl'>{t("project1.subtitle")}</p>
-            <Link href={"apuppa.com.br"} title='Website Apuppa'
+            <Link href={"https://apuppa.com.br"} title='Website Apuppa' target='_blank'
               className='flex relative w-fit border-2 border-white items-center group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer'
             >
               {t("project1.button")}
@@ -82,7 +86,7 @@ export const Projects = () => {
               })}
             </h3>
             <p className='w-full text-base lg:text-base'>{t("project3.subtitle")}</p>
-            <Link href={"apuppa.com.br"} title='Website Apuppa'
+            <Link href={"https://eacoaching.pt/"} title='Website EaCoaching' target='_blank'
               className='flex relative w-fit border-2 border-white items-center group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer'
             >
               {t("project3.button")}
@@ -92,7 +96,7 @@ export const Projects = () => {
             </Link>
           </div>
         </div>
-       
+
         <div className="relative lg:col-span-2 lg:row-span-2 w-full min-h-[500px] lg:min-h-[500px] rounded-4xl overflow-hidden group px-20 lg:p-0">
           <video
             preload="none"
@@ -112,8 +116,8 @@ export const Projects = () => {
               })}
             </h3>
             <p className='w-full text-base lg:text-base'>{t("project2.subtitle")}</p>
-            <Link href={"apuppa.com.br"} title='Website Apuppa'
-              className='flex relative w-fit border-2 border-white items-center group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer'
+            <Link href={"https://cupcabanagourmet.com"} title='Website CupCabana' target='_blank'
+              className='flex relative w-fit border-2 border-white items-center group gap-4 text-black-agente bg-white px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer'
             >
               {t("project2.button")}
               <span className='absolute flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full'>

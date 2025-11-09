@@ -8,6 +8,7 @@ import { CgClose } from "react-icons/cg";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaInstagram, FaLinkedinIn, FaBehance } from "react-icons/fa";
 import { useTranslations } from 'next-intl';
+import { useContact } from '../context/contactContext';
 
 const itemVariants = {
     closed: {
@@ -37,6 +38,7 @@ const sideVariants = {
 export const PopupMenu = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const t = useTranslations("Menu");
+    const { openPopup } = useContact();
 
     return (
 
@@ -95,16 +97,14 @@ export const PopupMenu = () => {
                             >
                                 {t("why")}
                             </motion.a>
-                            <motion.a
-                                onClick={() => setOpenMenu(false)}
-                                href={"mailto:contato@agente.studio"}
-                                title='Contact Link'
+                            <motion.div
+                                onClick={openPopup}
                                 whileHover={{ scale: 1.1 }}
                                 variants={itemVariants}
                                 className="text-3xl w-full text-center px-6 text-black rounded-[10px] font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500"
                             >
                                 {t("contact")}
-                            </motion.a>
+                            </motion.div>
                             <motion.a
                                 onClick={() => setOpenMenu(false)}
                                 href={"#portfolio"}

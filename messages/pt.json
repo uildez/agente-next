@@ -28,19 +28,19 @@
   "Projects": {
     "cta": "Ver todos os projetos",
     "project1": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "Dinâmico e interativo",
+      "subtitle": "Assim pediu nossa cliente, a agência APUPPA das maiores agências de São Paulo.",
+      "button": "Visitar website"
     },
     "project2": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "Levando a identidade do Brasil <span>Internacionalmente</span>",
+      "subtitle": "Localização na Orlando, A Gente esteve presente desde a criação da Identidade Visual até a entrega e otimização do site",
+      "button": "Visitar site"
     },
     "project3": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "De Portugal <span>para o Mundo</span>",
+      "subtitle": "Através do reposicionamento de Identidade Visual e Redesign da presença digital, ajudamos o Edgar a mais que 2x seu faturamento.",
+      "button": "Visitar site"
     },
     "project4": {
       "title": "",
@@ -96,6 +96,34 @@
       "keyWords": "Design de interface (UI), Experiência do usuário (UX), Protótipos, Wireframes, Otimização de conversão"
     }
   },
+  "Budget": {
+    "pretitle": "Orçamento",
+    "title": "Interessado em resolver seus problemas com A Gente?",
+    "subtitle": "Prencha o formulário ou clique nos botões abaixo para construir algo incrível com A Gente",
+    "sendInfo": "Dados enviados com sucesso",
+    "sendSubtitle": "Em breve nossa equipe entrará em contato",
+    "name": "Seu nome",
+    "email": "Digite seu melhor e-mail",
+    "whatsapp": "Insira seu telefone",
+    "company": "Qual o nome da sua empresa?",
+    "budgetTitle": "Qual será o seu investimento?",
+    "contactOption": {
+      "WhatsApp": "Chamar no WhatsApp",
+      "Email": "Chamar no Email",
+      "Telefone": "Chamar no Telefone"
+    },
+    "budgetOption": {
+      "1": "Abaixo de R$5.000",
+      "2": "R$5.000 a R$10.000",
+      "3": "R$10.000 a R$20.000",
+      "4": "Acima de R$20.000"
+    },
+    "projectDescription": "Conte um pouco sobre o que precisa:",
+    "projectPlaceholder": "Preciso de...",
+    "sendingButton": "Enviando",
+    "sendButton": "Enviar",
+    "fillFields": "Por favor, preencha todos os campos obrigatórios."
+  },
   "About": {
     "title": "Quem somos nós?",
     "text": "Criamos a A GENTE porque acreditamos que um bom design começa com empatia: pelas pessoas, pelas histórias e pelas marcas que merecem ser vistas. Não criamos apenas projetos; criamos significado, juntos.",
@@ -135,7 +163,7 @@
   },
   "Footer": {
     "title": "Entre em contato e venha construir com <span>A Gente</span>",
-    "cta": "Marque sua análise gratuita",
+    "cta": "Marque sua análise",
     "reason": "100% Gratuito, sem comprometimento necessário",
     "end": "@ 2025 A Gente | Todos os direitos reservados",
     "pagePolice": "Política de Privacidade"

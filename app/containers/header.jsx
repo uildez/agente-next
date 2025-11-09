@@ -7,10 +7,12 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLocale } from "next-intl";
+import { useContact } from '../context/contactContext';
 
 export const Header = () => {
   const t = useTranslations("Header")
   const [animation3d, setAnimation3d] = useState(false)
+  const { openPopup } = useContact();
 
   const locale = useLocale();
 
@@ -54,24 +56,23 @@ export const Header = () => {
         </div>
       </h1>
       <div className='flex flex-col lg:flex-row w-full gap-4 lg:gap-8 items-center justify-center'>
-        <Link
-          className='flex relative items-center group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out'
-          href={""}
-          title='Schedulle a Call'
+        <div
+          className='flex relative items-center group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer'
+          onClick={openPopup}
           onMouseEnter={() => setAnimation3d(true)} onMouseLeave={() => setAnimation3d(false)}
         >
           {t("call")}
           <span className='absolute flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full'>
             <IoArrowUpOutline className='text-pink group-hover:rotate-90 text-2xl rotate-45 transition-all duration-500 ease-in-out' />
           </span>
-        </Link>
+        </div>
         <Link className='relative group' href={"#projects"} title='See your work'>
           {t("cta")}
           <span className='absolute -bottom-2 h-0.5 w-0 group-hover:w-full left-0 bg-black-agente transition-all duration-500 ease-in-out' />
         </Link>
       </div>
-      <Image className="absolute w-[150px] lg:w-[300px] rotate-12 top-8 z-10 lg:top-0 left-12 lg:left-20 he-float" src={animation3d === true ? "/images/mascots/he-blink.webp" : "/images/mascots/he.webp"} alt="3D Uildes Mascot" width={500} height={500} />
-      <Image className="absolute w-[130px] lg:w-[300px] -rotate-20 left-40 z-0 lg:left-auto lg:right-20 top-8 lg:top-auto lg:bottom-10 she-float" src={animation3d === true ? `/images/mascots/she-star.webp` : `/images/mascots/she-very-happy.webp`} alt="3D Uildes Mascot" width={500} height={500} />
+      <Image className="absolute w-[180px] lg:w-[300px] rotate-12 top-4 z-10 lg:top-0 left-16 lg:left-20 he-float" src={animation3d === true ? "/images/mascots/he-blink.webp" : "/images/mascots/he.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+      <Image className="absolute w-[150px] lg:w-[300px] -rotate-20 left-46 z-0 lg:left-auto lg:right-20 top-8 lg:top-auto lg:bottom-10 she-float" src={animation3d === true ? `/images/mascots/she-star.webp` : `/images/mascots/she-very-happy.webp`} alt="3D Uildes Mascot" width={500} height={500} />
     </div>
   )
 }

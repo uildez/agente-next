@@ -2,12 +2,12 @@
 'use client';
 
 import { useRouter } from "next/navigation"
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import useMeasure from 'react-use-measure';
 import { animate, motion, useMotionValue } from 'framer-motion';
 import { depositions } from '../data/depositions';
 import { depositionsEn } from '../data/depositionsEn';
-import { IoStar } from 'react-icons/io5';
+import Image from "next/image";
 
 const Carrousel = ({ items, FAST_DURATION, SLOW_DURATION }) => {
   const [duration, setDuration] = useState(FAST_DURATION);
@@ -71,23 +71,21 @@ const Carrousel = ({ items, FAST_DURATION, SLOW_DURATION }) => {
     >
       {[...validItems, ...validItems].map((item, idx) => (
         <div key={idx}>
-          <div className='flex flex-col min-w-[300px] lg:min-w-[500px] gap-4 w-full h-full shadow-md bg-white border-yellow border-4 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8'>
-            <div className='flex flex-col lg:flex-row items-center justify-between w-full'>
+          <div className='flex flex-col min-w-[350px] lg:min-w-[500px] gap-4 w-full h-full shadow-md bg-white border-yellow border-4 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8'>
+            <div className='flex flex-col lg:flex-row items-start justify-between w-full'>
               <div className="flex items-center gap-4">
-                <span className="w-[50px] h-[50px] rounded-full bg-pink"/>
-                <p className='text-gray-500 font-nexa'>
-                  {item.nome}
-                </p>
-              </div>
-              <div className='flex text-xl text-yellow gap-1'>
-                <IoStar />
-                <IoStar />
-                <IoStar />
-                <IoStar />
-                <IoStar />
+                <Image src={item.foto} width={400} height={400} alt={`Photo ${item.nome}`} className="w-[50px] h-[50px] rounded-full bg-pink" />
+                <div className="flex flex-col items-start">
+                  <p className='text-black-agente font-nexa text-xl'>
+                    {item.nome}
+                  </p>
+                  <p className='text-gray-500 font-nexa'>
+                    {item.cargo}
+                  </p>
+                </div>
               </div>
             </div>
-            <p className='uppercase text-sm lg:text-xl font-nexa font-bold'>
+            <p className='text-sm lg:text-xl font-nexa font-bold'>
               {item.titulo}
             </p>
             <p className='font-medium text-sm text-gray transition-opacity ease-in-out cursor-pointer'>

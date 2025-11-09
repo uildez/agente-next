@@ -4,6 +4,7 @@ import Head from "next/head";
 import LayoutWrapper from "./components/layoutWrapper";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import { ContactProvider } from "./context/contactContext";
 
 export const metadata = {
   title: "A Gente | Studio",
@@ -81,9 +82,11 @@ export default async function RootLayout({ children }) {
       {/* <LinkedInInsightTag /> */}
       {/* <GoogleTagManager gtmId="GTM-N3FNH7MC" /> */}
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <LayoutWrapper>{children}</LayoutWrapper>
-        </NextIntlClientProvider>
+        <ContactProvider>
+          <NextIntlClientProvider messages={messages}>
+            <LayoutWrapper>{children}</LayoutWrapper>
+          </NextIntlClientProvider>
+        </ContactProvider>
       </body>
       {/* <GoogleAnalytics gaId="" /> */}
     </html >

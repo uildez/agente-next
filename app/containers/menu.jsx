@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useTranslations } from 'use-intl';
 import { HiLanguage } from "react-icons/hi2";
+import { useContact } from '../context/contactContext';
 
 export const Menu = () => {
   const t = useTranslations("Menu");
@@ -15,6 +16,7 @@ export const Menu = () => {
 
   const controls = useAnimation();
   const [lastScrollY, setLastScrollY] = useState(0);
+  const { openPopup } = useContact();
 
   useEffect(() => {
     const cookieLocale = document.cookie.split("; ").find((row) => row.startsWith("MYNEXTAPP_LOCALE"))?.split("=")[1];
@@ -90,7 +92,7 @@ export const Menu = () => {
             {t("why")}
           </p>
         </Link>
-        <Link href={"mailto:contato@agente.studio"} title='Contato link' className='flex items-center gap-2 py-2 px-6 bg-white rounded-full group hover:bg-pink hover:text-white ransition-all hover:scale-105 transition-all duration-500 ease-in-out'>
+        <div onClick={openPopup} title='Contato link' className='flex items-center gap-2 py-2 px-6 bg-white rounded-full group hover:bg-pink hover:text-white ransition-all cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out'>
           <span className='relative w-0 h-0 group-hover:h-2.5 group-hover:w-2.5 transition-all duration-500 ease-in-out'>
             <span className='absolute w-0 h-0 group-hover:h-2.5 group-hover:w-2.5 rounded-full bg-white animate-ping' />
             <span className='absolute top-px right-px w-0 h-0 group-hover:h-2 group-hover:w-2 rounded-full bg-white' />
@@ -98,7 +100,7 @@ export const Menu = () => {
           <p className='font-nexa font-light text-lg'>
             {t("contact")}
           </p>
-        </Link>
+        </div>
         <Link href={"#portfolio"} title='Portfolio link' className='flex items-center gap-2 py-2 px-6 bg-white rounded-full group hover:bg-pink hover:text-white ransition-all hover:scale-105 transition-all duration-500 ease-in-out'>
           <span className='relative w-0 h-0 group-hover:h-2.5 group-hover:w-2.5 transition-all duration-500 ease-in-out'>
             <span className='absolute w-0 h-0 group-hover:h-2.5 group-hover:w-2.5 rounded-full bg-white animate-ping' />

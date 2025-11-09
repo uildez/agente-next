@@ -135,8 +135,8 @@ const About = () => {
       <>We do things differently, </>,
       <><span ref={heStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" /> <span className='text-yellow italic'>blending strategy and beauty</span>, </>,
       <>with the care the market forgot.</>,
-      <>Because when it’s</>,
-      <>about <span className='text-pink italic'>us, we make it happen.</span></>,
+      <>Because when it’s about</>,
+      <><span className='text-pink italic'>us, we make it happen.</span></>,
     ],
   };
   
@@ -161,15 +161,16 @@ const About = () => {
     ],
     en: [
       <>“A Gente” means “us”.</>,
-      <>And that’s what we’re all about:</>,
-      <>collaboration, partnership, and purpose.</>,
+      <>And that’s what we’re all</>,
+      <>about: collaboration,</>,
+      <>partnership, and purpose.</>,
       <>We’re a <span ref={sheStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/she-star.svg')] mx-2" /><span className='text-pink italic'>creative couple</span></>,
       <>who make digital feel human.</>,
       <>We do things differently, </>,
       <><span ref={heStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" /> <span className='text-yellow italic'>blending strategy and beauty</span>, </>,
       <>with the care the market forgot.</>,
-      <>Because when it’s</>,
-      <>about <span className='text-pink italic'>us, we make it happen.</span></>,
+      <>Because when it’s about</>,
+      <><span className='text-pink italic'>us, we make it happen.</span></>,
     ],
   };
 
@@ -185,7 +186,7 @@ const About = () => {
       <motion.img
         ref={ref}
         style={{ x }}
-        className="absolute w-[100px] rotate-90 lg:rotate-0 lg:w-[200px] -top-8 lg:top-auto lg:left-0"
+        className="absolute w-[100px] rotate-90 lg:rotate-0 lg:w-[200px] top-0 lg:top-auto lg:left-0"
         src="/images/mascots/he-up.webp"
         alt="3D Uildes Mascot"
         width={500}

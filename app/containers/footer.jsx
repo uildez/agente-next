@@ -4,9 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaBehance, FaLinkedinIn } from 'react-icons/fa'
 import { IoArrowUpOutline, IoLogoInstagram } from 'react-icons/io5'
+import { useContact } from '../context/contactContext'
 
 export const Footer = () => {
   const t = useTranslations("Footer");
+    const { openPopup } = useContact();
 
   return (
     <div className='flex flex-col rounded-4xl p-8 w-full px-8 lg:px-20 2xl:px-40 font-nexa'>
@@ -20,12 +22,12 @@ export const Footer = () => {
               })}
             </h2>
             <div className='flex flex-col lg:flex-row items-center gap-4 lg:gap-8 lg:mb-12'>
-              <Link className='flex relative items-center group gap-4 text-white text-center lg:text-left bg-black-agente px-4 lg:px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={""} title='Schedulle a Call'>
+              <div onClick={openPopup} className='flex relative items-center justify-center w-full lg:w-fit group lg:gap-4 text-white text-center lg:text-left cursor-pointer bg-black-agente px-0 lg:px-8 py-4 pr-0 lg:pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={""} title='Schedulle a Call'>
                 {t("cta")}
-                <span className='absolute flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full'>
+                <span className='absolute hidden lg:flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full'>
                   <IoArrowUpOutline className='text-pink group-hover:rotate-90 group-hover:text-pink text-2xl rotate-45 transition-all duration-500 ease-in-out' />
                 </span>
-              </Link>
+              </div>
               <p className='text-white text-center'>{t("reason")}</p>
             </div>
           </div>

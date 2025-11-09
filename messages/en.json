@@ -28,19 +28,19 @@
   "Projects": {
     "cta": "See all projects",
     "project1": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "Dinamic and <span>Animated</span>",
+      "subtitle": "This was the request of our client, the APUPPA agency, one of the largest agencies in São Paulo.",
+      "button": "Visit Website"
     },
     "project2": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "Taking Brazil's identity <span>internationally</span>",
+      "subtitle": "Located in Orlando, A Gente was involved from the creation of the visual identity to the delivery and optimization of the website.",
+      "button": "Visit Website"
     },
     "project3": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "From Portugal to <span>the World</span>",
+      "subtitle": "Through visual identity repositioning and digital presence redesign, we helped Edgar more than double his revenue.",
+      "button": "Visit Website"
     },
     "project4": {
       "title": "",
@@ -95,6 +95,34 @@
       "subtitle": "Delightful experiences. Functional layouts and prototypes that combine beauty and usability.",
       "keyWords": "UI design, UX design, Prototypes, User interface, Wireframes, Conversion optimization"
     }
+  },
+  "Budget": {
+    "pretitle": "Budget",
+    "title": "Interested in solving your problems with A Gente?",
+    "subtitle": "Fill out the form or click the buttons bellow",
+    "sendInfo": "Data sent successfully",
+    "sendSubtitle": "Our team will contact you soon",
+    "name": "Your name",
+    "email": "Enter your best email",
+    "whatsapp": "Enter your phone number",
+    "company": "What is your company's name?",
+    "budgetTitle": "What will be your investment?",
+    "contactOption": {
+      "WhatsApp": "Chat via WhatsApp",
+      "Email": "Chat via Email",
+      "Telefone": "Make a Call"
+    },
+    "budgetOption": {
+      "1": "Bellow $5,000",
+      "2": "$5k to $10k",
+      "3": "$10k and $20k",
+      "4": "Above $20,000"
+    },
+    "projectDescription": "Tell us a little about what you need:",
+    "projectPlaceholder": "I need...",
+    "sendingButton": "Sending",
+    "sendButton": "Send",
+    "fillFields": "Please fill in all required fields."
   },
   "About": {
     "title": "Who we are?",

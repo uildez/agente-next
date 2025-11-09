@@ -1,27 +1,37 @@
 export const depositionsEn = [
     {
-        nome: "— Marcella Tranchesi",
-        titulo: "Impeccable service",
-        depoimento: "I hired Kemparsk's transfer service with an armored Kia Carnival to pick us up. I just provided the flight number, and they monitored everything - our flight was delayed by 1h30, and I didn't even need to notify them."
+        nome: 'Júlia Molero',
+        cargo: 'Infoproduct Creator and Teacher',
+        titulo: 'Great Communication',
+        depoimento: 'Good communication and delivery. The website turned out great. I recommend it!',
+        foto: '/images/clients/juliamolero.webp', 
     },
     {
-        nome: "— Thassia Naves",
-        titulo: "Punctuality and safety",
-        depoimento: "I love being under Kemparsk's care. Punctual, professional, offering great comfort and safety for my days in SP. I always recommend them!"
+        nome: 'Vinícius Lorenzet Goin',
+        cargo: 'Project Manager | Harpia MKT',
+        titulo: 'Incredible Results!',
+        depoimento: 'Organized and attentive professional, as well as very competent in the service we hired.',
+        foto: '/images/clients/vinicius.webp', 
     },
     {
-        nome: "— Bella Falconi",
-        titulo: "Excellent service",
-        depoimento: "I felt very safe and chic with Kemparsk's armored transfer service."
+        nome: 'Marcus Vinícius',
+        cargo: 'Founder | São Lucas Clinic',
+        titulo: 'Extremely Professional Work',
+        depoimento: 'Always available to meet and listen to our demands. Not to mention that he is an artist. I highly recommend it.',
+        foto: '/images/clients/marcus.webp', 
     },
     {
-        nome: "— Manu Berger",
-        titulo: "Worry-free organization",
-        depoimento: "Being able to rely on Kemparsk's organization and knowing they'll be there waiting for me gives me the freedom to do my things without any worries."
+        nome: 'Alerrandro Gomiero',
+        cargo: 'Investment Analyst',
+        titulo: 'Our Website Looks Spectacular',
+        depoimento: 'Excellent professionals! Very meticulous. We are satisfied with the delivered service. Delivered on time!',
+        foto: '/images/clients/alerrandro.webp', 
     },
     {
-        nome: "— Luciana Transchesi",
-        titulo: "Reliable transportation",
-        depoimento: "From NYC to SP! Reliable transportation, excellent drivers... from the hotel to the airport and in SP from the airport to home. And with armored vehicles. Truly a 10/10 service."
+        nome: 'Leonardo Rainha',
+        cargo: 'CEO | Rainha Lawyers',
+        titulo: 'We Achieved the Best Result',
+        depoimento: 'Excellent service, helped me a lot in building the design of my page.',
+        foto: '/images/clients/leonardo.webp', 
     },
 ]

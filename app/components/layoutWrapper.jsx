@@ -9,17 +9,21 @@ export default function LayoutWrapper({ children }) {
   const pathname = usePathname();
 
   return (
-    <ContactProvider>
-      <Menu />
-      {children}
-      <Footer />
-      <ContactPopupWrapper/>
-    </ContactProvider>
+    <>
+      <Preloader />
+      <ContactProvider>
+        <Menu />
+        {children}
+        <Footer />
+        <ContactPopupWrapper />
+      </ContactProvider>
+    </>
   );
 }
 
 import { useContact } from "../context/contactContext";
 import ContactPopup from './contactPopup';
+import Preloader from './preLoader';
 function ContactPopupWrapper() {
   const { showPopup, closePopup } = useContact();
   return <ContactPopup isOpen={showPopup} onClose={closePopup} />;

@@ -44,11 +44,11 @@ export const AboutMobile = () => {
               className="absolute inset-0 flex items-center justify-center z-0"
             >
               <Image
-                src="/svg/she-star.svg"
+                src="/images/she-photo.webp"
                 alt="Ayalla - A Gente"
                 width={1000}
                 height={1000}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-cover"
               />
             </motion.div>
 
@@ -58,11 +58,11 @@ export const AboutMobile = () => {
               className="absolute inset-0 flex items-center justify-center z-10"
             >
               <Image
-                src="/svg/he-star.svg"
+                src="/images/he-photo.webp"
                 alt="Uildes - A Gente"
                 width={1000}
                 height={1000}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-cover"
               />
             </motion.div>
           </div>

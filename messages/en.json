@@ -1,4 +1,11 @@
 {
+  "Preloader": {
+    "text": "Building with <br></br><span>personality</span>"
+  },
+  "MouseTooltip": {
+    "video": "Keep scrolling",
+    "projects": "Your project can be the next"
+  },
   "Topbar": {
     "title": "From Brazil to"
   },
@@ -43,9 +50,9 @@
       "button": "Visit Website"
     },
     "project4": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "<span>Over 1 million</span> views on a single video",
+      "subtitle": "In 6 months, more than 3,000 followers and a 45% increase in engagement.",
+      "button": "Visit Instagram"
     }
   },
   "Numbers": {

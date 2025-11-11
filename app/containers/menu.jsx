@@ -62,7 +62,7 @@ export const Menu = () => {
 
   return (
     <div
-      className="fixed hidden lg:flex items-center justify-center z-50 h-[60px] w-full bottom-8 font-nexa"
+      className="fixed hidden lg:flex items-center justify-center z-40 h-[60px] w-full bottom-8 font-nexa"
     >
       <div className='flex items-center justify-center gap-8 px-2 bg-white h-full w-fit rounded-full shadow-lg group transition-all duration-500 ease-in-out'>
         <Link href={"#about-us"} title='About Us Link' className='items-center gap-2 py-2 px-6 bg-white rounded-full group hover:bg-pink hover:text-white opacity-0 -translate-x-60 hidden group-hover:flex group-hover:opacity-100 group-hover:translate-x-0 hover:scale-105 transition-all duration-500 ease-in-out'>

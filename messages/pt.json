@@ -1,4 +1,11 @@
 {
+  "Preloader": {
+    "text": "Construindo com <br></br><span>personalidade</span>"
+  },
+   "MouseTooltip": {
+    "video": "Continue a nadar",
+    "projects": "Seu projeto pode ser o próximo"
+  },
   "Topbar": {
     "title": "Do Brasil para"
   },
@@ -43,9 +50,9 @@
       "button": "Visitar site"
     },
     "project4": {
-      "title": "",
-      "subtitle": "",
-      "button": ""
+      "title": "<span>+1M de visualizações</span> em um único vídeo",
+      "subtitle": "Em 6 meses mais de 3 mil seguidores e um crescimento de engajamento de 45%",
+      "button": "Visitar Instagram"
     }
   },
   "Numbers": {

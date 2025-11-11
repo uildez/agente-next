@@ -22,6 +22,7 @@ import { HiLanguage } from "react-icons/hi2"
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ContactProvider, useContact } from "./context/contactContext";
+import { useTranslations } from "next-intl"
 
 export default function Home() {
   const router = useRouter()
@@ -29,6 +30,7 @@ export default function Home() {
   const [languageButton, setLanguageButton] = useState(false);
   const [autoPopup, setAutoPopup] = useState(false);
   const [showPopup, setShowPopup] = useState(true);
+  const t = useTranslations("MouseTooltip")
 
   useEffect(() => {
     const cookieLocale = document.cookie.split("; ").find((row) => row.startsWith("MYNEXTAPP_LOCALE"))?.split("=")[1];
@@ -77,17 +79,13 @@ export default function Home() {
         <Topbar />
         <Header />
         <Video
-          onMouseEnter={handleMouseEnter(locale === "en"
-                    ? "Continue a nadar"
-                    : "Keep scrolling")}
+          onMouseEnter={handleMouseEnter(t("video"))}
           onMouseLeave={handleMouseLeave}
         />
         <Whyus />
         <Partnerships />
         <Projects
-          onMouseEnter={handleMouseEnter(locale === "en"
-                    ? "Clique no botão"
-                    : "Click in button")}
+          onMouseEnter={handleMouseEnter(t("projects"))}
           onMouseLeave={handleMouseLeave}
         />
         <Numbers />

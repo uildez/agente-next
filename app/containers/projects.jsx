@@ -127,17 +127,22 @@ export const Projects = ({ onMouseEnter, onMouseLeave }) => {
           </div>
         </div>
 
-        <div className="relative lg:col-span-full row-span-1 w-full min-h-[250px] lg:min-h-[500px] rounded-4xl overflow-hidden">
-          <video
-            preload="none"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/videos/Mk-Apuppa.mp4" type="video/mp4" />
-          </video>
+        <div className="relative lg:col-span-full row-span-1 w-full min-h-[500px] lg:min-h-[500px] rounded-4xl p-8 bg-black-agente overflow-hidden bg-no-repeat bg-size-[800px] lg:bg-cover bg-bottom lg:bg-right bg-[url('/images/project-jojo.webp')]">
+          <div className='absolute flex flex-col h-full w-full lg:w-2/5 p-2 lg:p-8 gap-2 lg:gap-6 rounded-4xl text-white z-40'>
+            <h3 className='text-xl lg:text-4xl font-bold'>
+              {t.rich('project4.title', {
+                span: (chunks) => <span className='font-stix italic'>{chunks}</span>
+              })}</h3>
+            <p className='w-3/4 text-base lg:text-xl'>{t("project4.subtitle")}</p>
+            <Link href={"https://www.instagram.com/jojo.nailsart/"} title='Jojo Nails Art Profile' target='_blank'
+              className='flex relative w-fit border-2 border-white items-center group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer'
+            >
+              {t("project4.button")}
+              <span className='absolute flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full'>
+                <IoArrowUpOutline className='text-pink group-hover:rotate-90 text-2xl rotate-45 transition-all duration-500 ease-in-out' />
+              </span>
+            </Link>
+          </div>
         </div>
         <motion.span
           ref={refShe}

@@ -6,7 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ContactProvider } from "./context/contactContext";
 import { LinkedInInsightTag } from 'nextjs-linkedin-insight-tag'
-import { GoogleAnalytics } from "nextjs-google-analytics";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: "A Gente | Studio",

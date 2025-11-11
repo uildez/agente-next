@@ -37,34 +37,18 @@ export const AboutMobile = () => {
         {/* Bloco sticky com animação */}
         <div className="sticky top-0 h-screen flex flex-col items-center justify-center gap-0 px-6 overflow-hidden bg-transparent">
           {/* Imagens sobrepostas */}
-          <div className="relative w-full max-w-[360px] h-[200px] mb-6 overflow-hidden rounded-2xl">
+          <div className="relative w-full max-w-[360px] h-[300px] mb-6 overflow-hidden rounded-2xl">
             {/* Ela por baixo, sempre visível */}
             <motion.div
               style={{ clipPath: sheClip }}
-              className="absolute inset-0 flex items-center justify-center z-0"
-            >
-              <Image
-                src="/images/she-photo.webp"
-                alt="Ayalla - A Gente"
-                width={1000}
-                height={1000}
-                className="w-full h-auto object-cover"
-              />
-            </motion.div>
+              className="absolute inset-0 flex items-center justify-center z-0 bg-size-[500px] bg-no-repeat bg-position-[center_top_-2rem] bg-[url('/images/she-photo.webp')]"
+            />
 
             {/* Ele por cima, desaparecendo */}
             <motion.div
               style={{ clipPath: heClip }}
-              className="absolute inset-0 flex items-center justify-center z-10"
-            >
-              <Image
-                src="/images/he-photo.webp"
-                alt="Uildes - A Gente"
-                width={1000}
-                height={1000}
-                className="w-full h-auto object-cover"
-              />
-            </motion.div>
+              className="absolute inset-0 flex items-center justify-center z-10 bg-size-[500px] bg-no-repeat bg-position-[center_top_-2rem] bg-[url('/images/he-photo.webp')]"
+            />
           </div>
 
           {/* Textos sobrepostos */}
@@ -72,7 +56,7 @@ export const AboutMobile = () => {
             {/* Ela por baixo, sempre visível */}
             <motion.div
               style={{ clipPath: sheClip }}
-              className="absolute inset-0 bg-pink text-white p-6 rounded-2xl z-0 text-sm leading-relaxed"
+              className="absolute inset-0 bg-pink text-white p-6 rounded-2xl z-0 text-sm leading-5"
             >
               {t.rich("aboutShe", { br: () => <br /> })}
             </motion.div>
@@ -80,7 +64,7 @@ export const AboutMobile = () => {
             {/* Ele por cima, desaparecendo */}
             <motion.div
               style={{ clipPath: heClip }}
-              className="absolute inset-0 bg-yellow text-black-agente p-6 rounded-2xl z-10 text-sm leading-relaxed"
+              className="absolute inset-0 bg-yellow text-black-agente p-6 rounded-2xl z-10 text-sm leading-5"
             >
               {t.rich("aboutHe", { br: () => <br /> })}
             </motion.div>

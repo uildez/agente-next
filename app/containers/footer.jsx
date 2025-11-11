@@ -50,7 +50,7 @@ export const Footer = () => {
             <Link href="#" title="Acess your privacy policy" className='border-2 p-2 rounded-xl border-white group font-bold text-white text-3xl hover:scale-105 hover:rotate-6 transition-all duration-500 ease-in-out'>
               <FaBehance />
             </Link>
-            <Link href="#" title="Acess your privacy policy" className='border-2 p-2 rounded-xl border-white group font-bold text-white text-3xl hover:scale-105 hover:rotate-6 transition-all duration-500 ease-in-out'>
+            <Link href="https://linkedin.com/company/agente-studio" title="Acess your privacy policy" className='border-2 p-2 rounded-xl border-white group font-bold text-white text-3xl hover:scale-105 hover:rotate-6 transition-all duration-500 ease-in-out'>
               <FaLinkedinIn />
             </Link>
           </div>

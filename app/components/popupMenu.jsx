@@ -132,7 +132,7 @@ export const PopupMenu = () => {
                                 <a href='' title='Check your Behance' className='flex items-center justify-center rounded-full bg-black-agente text-white hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
                                     <FaBehance className="text-2xl" />
                                 </a>
-                                <a href='' title='Check Your Linkedin' className='flex items-center justify-center rounded-full bg-black-agente text-white hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
+                                <a href='https://linkedin.com/company/agente-studio' title='Check Your Linkedin' className='flex items-center justify-center rounded-full bg-black-agente text-white hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
                                     <FaLinkedinIn className="text-2xl" />
                                 </a>
                             </motion.div>

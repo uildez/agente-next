@@ -5,6 +5,8 @@ import LayoutWrapper from "./components/layoutWrapper";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ContactProvider } from "./context/contactContext";
+import { LinkedInInsightTag } from 'nextjs-linkedin-insight-tag'
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export const metadata = {
   title: "A Gente | Studio",
@@ -64,6 +66,9 @@ export default async function RootLayout({ children }) {
   const locale = await getLocale();
 
   const messages = await getMessages();
+  const projectId = "u4n9tmji8r"
+
+  Clarity.init(projectId);
 
   return (
     <html lang={locale} className='scroll-smooth' style={{ scrollBehavior: 'smooth' }}>
@@ -79,7 +84,7 @@ export default async function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      {/* <LinkedInInsightTag /> */}
+      <LinkedInInsightTag />
       {/* <GoogleTagManager gtmId="GTM-N3FNH7MC" /> */}
       <body>
         <ContactProvider>
@@ -88,7 +93,7 @@ export default async function RootLayout({ children }) {
           </NextIntlClientProvider>
         </ContactProvider>
       </body>
-      {/* <GoogleAnalytics gaId="" /> */}
+      <GoogleAnalytics gaId="G-CEYRW2JZY4" />
     </html >
   );
 }

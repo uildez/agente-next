@@ -42,7 +42,7 @@ export const PopupMenu = () => {
 
     return (
 
-        <div className="fixed w-full flex items-end justify-end top-0 right-0 h-16 lg:h-[100px] bg-transparent z-50 lg:hidden">
+        <div className="fixed w-full flex items-end justify-end top-0 right-0 h-16 lg:h-[100px] bg-transparent z-40 lg:hidden">
             <div className="flex w-full h-full items-end pr-4 justify-end">
                 <button className="block lg:hidden bg-black-agente rounded-4xl p-1.5" onClick={() => setOpenMenu((prev) => !prev)}>
                     {openMenu ? <CgClose className="text-4xl text-white" /> : <HiBars2 className="text-4xl text-white" />}

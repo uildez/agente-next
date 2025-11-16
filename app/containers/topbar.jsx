@@ -39,15 +39,15 @@ export const Topbar = () => {
         </div>
       </div>
       <div className='items-center gap-4 text-gray-500 hidden lg:flex'>
-        <Link href="https://instagram.com/agente.studio" title="See more on Instagram" className='relative group'>
+        <Link href="https://instagram.com/agente.studio" target="_blank" title="See more on Instagram" className='relative group'>
           Instagram
           <span className='absolute -bottom-1 h-0.5 w-0 group-hover:w-full left-0 bg-gray-500 transition-all duration-500 ease-in-out' />
         </Link>
-        <Link href="https://linkedin.com/company/agente-studio" title="See more on LinkedIn" className='relative group'>
+        <Link href="https://linkedin.com/company/agente-studio" target="_blank" title="See more on LinkedIn" className='relative group'>
           LinkedIn
           <span className='absolute -bottom-1 h-0.5 w-0 group-hover:w-full left-0 bg-gray-500 transition-all duration-500 ease-in-out' />
         </Link>
-        <Link href="https://behance.net/agente" title="See more on Behance" className='relative group'>
+        <Link href="https://behance.net/agente" target="_blank" title="See more on Behance" className='relative group'>
           Behance
           <span className='absolute -bottom-1 h-0.5 w-0 group-hover:w-full left-0 bg-gray-500 transition-all duration-500 ease-in-out' />
         </Link>

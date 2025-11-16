@@ -10,11 +10,9 @@ export const Partnerships = () => {
   const t = useTranslations("Partnerships")
 
   const images1 = [
-    "/images/clients/logo-ainext.webp",
     "/images/clients/logo-c4b.webp",
     "/images/clients/logo-kemparsk.webp",
     "/images/clients/logo-pinheirinho.webp",
-    "/images/clients/logo-vaiviajar.webp",
   ]
 
   const images2 = [
@@ -83,7 +81,7 @@ export const Partnerships = () => {
               key={`line1-${idx}`}
               src={item}
               alt='Logo clients'
-              className='object-contain opacity-75 hover:opacity-100 hover:scale-105 w-[150px] lg:w-auto transition-all duration-500 ease-in-out brightness-0'
+              className='object-contain opacity-75 hover:opacity-100 w-[150px] h-20 lg:w-auto transition-all duration-500 ease-in-out brightness-0'
               width={500}
               height={500}
             />
@@ -100,7 +98,7 @@ export const Partnerships = () => {
               key={`line2-${idx}`}
               src={item}
               alt='Logo clients'
-              className='object-contain opacity-75 hover:opacity-100 hover:scale-105 w-[150px] lg:w-auto transition-all duration-500 ease-in-out brightness-0'
+              className='object-contain opacity-75 hover:opacity-100 w-[150px] h-20 lg:w-auto transition-all duration-500 ease-in-out brightness-0'
               width={500}
               height={500}
             />

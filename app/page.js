@@ -27,10 +27,20 @@ import { useTranslations } from "next-intl"
 export default function Home() {
   const router = useRouter()
   const [locale, setLocale] = useState("")
-  const [languageButton, setLanguageButton] = useState(false);
-  const [autoPopup, setAutoPopup] = useState(false);
   const [showPopup, setShowPopup] = useState(true);
   const t = useTranslations("MouseTooltip")
+  const [languageButton, setLanguageButton] = useState(false);
+  const [autoPopup, setAutoPopup] = useState(false);
+
+  useEffect(() => {
+    const timerIn = setTimeout(() => setAutoPopup(true), 8000);
+    const timerOut = setTimeout(() => setAutoPopup(false), 12000);
+
+    return () => {
+      clearTimeout(timerIn);
+      clearTimeout(timerOut);
+    };
+  }, []);
 
   useEffect(() => {
     const cookieLocale = document.cookie.split("; ").find((row) => row.startsWith("MYNEXTAPP_LOCALE"))?.split("=")[1];
@@ -43,9 +53,8 @@ export default function Home() {
       router.refresh
     }
 
-    // 👇 Mostra o popup automaticamente ao carregar
     setAutoPopup(true)
-    const timer = setTimeout(() => setAutoPopup(false), 3000) // some em 3s
+    const timer = setTimeout(() => setAutoPopup(false), 3000) 
     return () => clearTimeout(timer)
   }, [router]);
 
@@ -98,8 +107,12 @@ export default function Home() {
         <ContactPopupWrapper />
         <div className="fixed bottom-4 right-4 block lg:hidden z-40">
           <button
-            className='relative bg-black-agente p-3 text-white cursor-pointer rounded-full hover:scale-105 hover:bg-pink text-2xl transition-all duration-500 ease-in-out'
-            onClick={() => changeLocale(locale === "en" ? "pt" : "en")}
+            className="relative bg-black-agente p-3 text-white cursor-pointer rounded-full hover:scale-105 hover:bg-pink text-2xl transition-all duration-500 ease-in-out"
+            onClick={() => {
+              setLanguageButton(true);
+              changeLocale(locale === "en" ? "pt" : "en");
+              setTimeout(() => setLanguageButton(false), 2000);
+            }}
           >
             <AnimatePresence>
               {(languageButton || autoPopup) && (
@@ -108,7 +121,7 @@ export default function Home() {
                   animate={{ scale: 1, rotate: 0, opacity: 1, y: 0 }}
                   exit={{ scale: 0.8, rotate: 3, opacity: 0, y: 10 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className='absolute -top-16 w-[250px] right-0 bg-white shadow-2xl rounded-2xl p-4 text-black text-sm font-semibold'
+                  className="absolute -top-16 w-[250px] right-0 bg-white shadow-2xl rounded-2xl p-4 text-black text-sm font-semibold"
                 >
                   {locale === "en"
                     ? "Mudar idioma para PT-BR"
@@ -116,6 +129,7 @@ export default function Home() {
                 </motion.div>
               )}
             </AnimatePresence>
+
             <HiLanguage />
           </button>
         </div>

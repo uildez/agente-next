@@ -153,9 +153,10 @@ export const Projects = ({ onMouseEnter, onMouseLeave }) => {
 
       {/* --- CTA --- */}
       <Link
-        className="hidden w-fit relative items-center mt-12 mb-20 group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out"
-        href=""
-        title="Schedule a Call"
+        className="w-fit relative items-center mt-12 mb-20 group gap-4 text-white bg-black-agente px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out"
+        href="https://www.figma.com/proto/GNUorT8P9ntLckP7oCQ7RD/Portfolio-%7C-A-Gente?page-id=0%3A1&node-id=1-2&p=f&viewport=181%2C142%2C0.62&t=bnUe73SJ38WAhaRI-1&scaling=contain&content-scaling=fixed"
+        title="Portfolio A Gente"
+        target="_blank"
       >
         {t("cta")}
         <span className="absolute flex items-center justify-center right-2 top-1.5 bg-white/0 group-hover:bg-white w-[45px] h-[80%] rounded-full">

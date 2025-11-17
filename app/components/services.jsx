@@ -72,7 +72,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services1.title")}
           </h3>
-          <p className='text-sm lg:text-lg font-nexa'>
+          <p className='text-sm lg:text-lg leading-5 font-nexa'>
             {t("services1.subtitle")}
           </p>
           <div className='flex flex-wrap gap-2 mt-4 w-fit'>
@@ -94,7 +94,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services2.title")}
           </h3>
-          <p className='text-sm lg:text-lg font-nexa'>
+          <p className='text-sm lg:text-lg leading-5 font-nexa'>
             {t("services2.subtitle")}
           </p>
           <div className='flex flex-wrap gap-2 mt-4 w-fit'>
@@ -116,7 +116,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services3.title")}
           </h3>
-          <p className='text-sm lg:text-lg font-nexa'>
+          <p className='text-sm lg:text-lg leading-5 font-nexa'>
             {t("services3.subtitle")}
           </p>
           <div className='flex flex-wrap gap-2 mt-4 w-fit'>
@@ -138,7 +138,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services4.title")}
           </h3>
-          <p className='text-sm lg:text-lg font-nexa'>
+          <p className='text-sm lg:text-lg leading-5 font-nexa'>
             {t("services4.subtitle")}
           </p>
           <div className='flex flex-wrap gap-2 mt-4 w-fit'>
@@ -160,7 +160,7 @@ const Carrousel = ({ FAST_DURATION, SLOW_DURATION }) => {
           <h3 className='font-nexa text-2xl font-bold mb-2 group-hover:rotate-3 transition-all duration-500 ease-in-out'>
             {t("services5.title")}
           </h3>
-          <p className='text-sm lg:text-lg font-nexa'>
+          <p className='text-sm lg:text-lg leading-5 font-nexa'>
             {t("services5.subtitle")}
           </p>
           <div className='flex flex-wrap gap-2 mt-4 w-fit'>

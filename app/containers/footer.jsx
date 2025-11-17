@@ -13,10 +13,10 @@ export const Footer = () => {
   return (
     <div className='flex flex-col rounded-4xl p-8 w-full px-8 lg:px-20 2xl:px-40 font-nexa'>
       <div className='flex flex-col relative bg-pink rounded-4xl px-8 lg:px-20 pt-20 pb-8 w-full'>
-        <Image src="/images/mascots/she-and-he-high.webp" className='absolute -top-16 left-12 lg:-left-8 w-[250px] lg:w-[500px]' alt="A Gente Mascot" width="2000" height="2000" />
-        <div className='flex items-center mt-[100px] lg:mt-0 lg:ml-[400px]'>
+        <Image src="/images/mascots/she-and-he-high.webp" className='absolute -top-16 left-12 lg:-left-8 w-[250px] lg:w-[300px] 2xl:w-[400px]' alt="A Gente Mascot" width="2000" height="2000" />
+        <div className='flex items-center mt-[100px] lg:mt-0 lg:ml-[200px] 2xl:ml-[400px]'>
           <div className='flex flex-col items-start gap-4'>
-            <h2 className='text-2xl lg:text-5xl text-center lg:text-left font-bold w-full lg:w-3/5 text-white'>
+            <h2 className='text-2xl lg:text-4xl 2xl:text-5xl text-center lg:text-left font-bold w-full lg:w-3/5 text-white'>
               {t.rich('title', {
                 span: (chunks) => <span className='font-stix italic'>{chunks}</span>
               })}
@@ -33,7 +33,7 @@ export const Footer = () => {
           </div>
         </div>
         
-        <span className='h-px w-full bg-white my-8' />
+        <span className='h-px w-full bg-white mb-4' />
 
         <div className='flex flex-col-reverse lg:flex-row items-center gap-8 justify-between w-full'>
           <div className='flex flex-col-reverse lg:flex-row items-center gap-4 lg:gap-8 text-white font-nexa'>

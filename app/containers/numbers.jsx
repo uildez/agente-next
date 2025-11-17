@@ -28,7 +28,7 @@ export const AnimatedNumber = ({ from = 0, to, suffix = "+" }) => {
   }, [isInView, count, to]);
 
   return (
-    <h3 ref={ref} className="font-black font-nexa text-black-agente text-8xl">
+    <h3 ref={ref} className="font-black font-nexa text-black-agente text-8xl lg:text-6xl 2xl:text-8xl">
       {displayValue}
       {suffix}
     </h3>
@@ -39,7 +39,7 @@ export const Numbers = () => {
   const t = useTranslations("Numbers");
 
   return (
-    <div className="flex flex-col lg:flex-row w-full justify-center gap-20 lg:gap-40 items-center pt-20">
+    <div className="flex flex-col lg:flex-row w-full justify-center gap-20 lg:gap-40 items-center">
       <div className="flex flex-col relative items-center lg:items-start ml-4 lg:ml-0">
         <AnimatedNumber to={10} />
         <span className="absolute w-5 h-5 rounded-full -left-6 lg:-left-12 bg-pink" />

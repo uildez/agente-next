@@ -52,11 +52,11 @@ export const AboutMobile = () => {
           </div>
 
           {/* Textos sobrepostos */}
-          <div className="relative w-full max-w-[720px] h-[600px]">
+          <div className="relative w-full max-w-[720px] h-[550px]">
             {/* Ela por baixo, sempre visível */}
             <motion.div
               style={{ clipPath: sheClip }}
-              className="absolute inset-0 bg-pink text-white p-6 rounded-2xl z-0 text-sm leading-5"
+              className="absolute inset-0 bg-pink text-white p-6 rounded-2xl z-0 text-md leading-5"
             >
               {t.rich("aboutShe", { br: () => <br /> })}
             </motion.div>
@@ -64,7 +64,7 @@ export const AboutMobile = () => {
             {/* Ele por cima, desaparecendo */}
             <motion.div
               style={{ clipPath: heClip }}
-              className="absolute inset-0 bg-yellow text-black-agente p-6 rounded-2xl z-10 text-sm leading-5"
+              className="absolute inset-0 bg-yellow text-black-agente p-6 rounded-2xl z-10 text-md leading-5"
             >
               {t.rich("aboutHe", { br: () => <br /> })}
             </motion.div>

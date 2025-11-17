@@ -30,7 +30,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <div className='flex relative w-full flex-col gap-4 lg:gap-8 2xl:gap-12 items-center pt-52 lg:pt-20 pb-40 lg:pb-40 px-8 lg:px-20 2xl:px-40'>
+    <div className='flex relative w-full flex-col gap-4 lg:gap-8 2xl:gap-12 items-center pt-52 lg:pt-8 2xl:pt-20 pb-40 lg:pb-20 2xl:pb-40 px-8 lg:px-20 2xl:px-40'>
       <div className='flex items-center gap-2 py-2 px-6 bg-white rounded-full shadow-lg'>
         <span className='relative w-2.5 h-2.5'>
           <span className='absolute w-2.5 h-2.5 rounded-full bg-pink animate-ping' />
@@ -38,7 +38,7 @@ export const Header = () => {
         </span>
         <p className='text-black-agente font-nexa text-sm lg:text-lg'>{t("available")}</p>
       </div>
-      <h1 className='text-black-agente text-center text-3xl lg:text-5xl w-full lg:w-3/6 font-nexa font-bold'>
+      <h1 className='text-black-agente text-center text-3xl lg:text-5xl w-full lg:w-[75%] xl:w-2/4 2xl:w-3/6 font-nexa font-bold'>
         {t("header")}
         <div className="relative h-[60px] lg:h-20 -mt-2 text-3xl lg:text-6xl font-stix italic">
           <AnimatePresence mode="wait">
@@ -71,8 +71,8 @@ export const Header = () => {
           <span className='absolute -bottom-2 h-0.5 w-0 group-hover:w-full left-0 bg-black-agente transition-all duration-500 ease-in-out' />
         </Link>
       </div>
-      <Image className="absolute w-[180px] lg:w-[300px] rotate-12 top-4 z-10 lg:top-0 left-16 lg:left-20 he-float" src={animation3d === true ? "/images/mascots/he-blink.webp" : "/images/mascots/he.webp"} alt="3D Uildes Mascot" width={500} height={500} />
-      <Image className="absolute w-[150px] lg:w-[300px] -rotate-20 left-46 z-0 lg:left-auto lg:right-20 top-8 lg:top-auto lg:bottom-10 she-float" src={animation3d === true ? `/images/mascots/she-star.webp` : `/images/mascots/she-very-happy.webp`} alt="3D Uildes Mascot" width={500} height={500} />
+      <Image className="absolute w-[180px] lg:w-[200px] 2xl:w-[300px] rotate-12 top-4 z-10 lg:top-0 left-16 lg:left-20 he-float" src={animation3d === true ? "/images/mascots/he-blink.webp" : "/images/mascots/he.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+      <Image className="absolute w-[150px] lg:w-[200px] 2xl:w-[300px] -rotate-20 left-46 z-0 lg:left-auto lg:right-20 top-8 lg:top-auto lg:bottom-10 she-float" src={animation3d === true ? `/images/mascots/she-star.webp` : `/images/mascots/she-very-happy.webp`} alt="3D Uildes Mascot" width={500} height={500} />
     </div>
   )
 }

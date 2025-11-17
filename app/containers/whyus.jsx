@@ -118,9 +118,9 @@ const About = () => {
       <>“A Gente” significa “nós”.</>,
       <>E é exatamente sobre isso:</>,
       <>colaboração, parceria e propósito.</>,
-      <>Nascemos de um <span ref={sheStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/she-star.svg')] mx-2" /><span className='text-pink italic'>casal do marketing</span></>,
+      <>Nascemos de um <span ref={sheStarRef} className="inline-block w-5 h-5 lg:w-[25px] -mb-1.5 lg:h-[25px] bg-cover bg-[url('/svg/she-star.svg')] mx-2" /><span className='text-pink italic'>casal do marketing</span></>,
       <>que acredita que o digital pode ser humano.</>,
-      <>Queremos fazer as <span ref={heStarRef} className="inline-block w-5 h-5 lg:w-[30px] lg:h-[30px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" /> <span className='text-yellow italic'>coisas de um jeito diferente</span>, </>,
+      <>Queremos fazer as <span ref={heStarRef} className="inline-block w-5 h-5 lg:w-[25px] -mb-1.5 lg:h-[25px] bg-cover bg-[url('/svg/he-star.svg')] mx-2" /> <span className='text-yellow italic'>coisas de um jeito diferente</span>, </>,
       <>entregando estratégia e estética com o</>,
       <>cuidado que o mercado esqueceu.</>,
       <>Porque quando a gente acredita</>,
@@ -177,9 +177,9 @@ const About = () => {
   return (
     <section
       id='sobre'
-      className="relative flex justify-center items-center h-[80vh] lg:h-[80vh] 2xl:h-[70vh] w-full bg-black-agente text-center px-6 lg:px-10 z-10 overflow-hidden"
+      className="relative flex justify-center items-center min-h-[80vh] lg:h-[95vh] 2xl:h-[70vh] w-full py-20 lg:py-0 bg-black-agente text-center px-6 lg:px-10 z-10 overflow-hidden"
     >
-      <div className="text-white text-xl lg:text-4xl 2xl:text-4xl leading-snug w-full lg:w-2/4">
+      <div className="text-white text-lg lg:text-4xl 2xl:text-4xl leading-8 w-full lg:w-3/4">
         <ScrollText content={contentMap[locale]} style="hidden lg:flex"/>
         <ScrollText content={contentMapMobile[locale]} style="flex lg:hidden"/>
       </div>

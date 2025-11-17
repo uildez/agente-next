@@ -38,7 +38,7 @@ export const Projects = ({ onMouseEnter, onMouseLeave }) => {
           className="absolute top-40 lg:top-[25vw] -left-8 w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] 2xl:w-[200px] 2xl:h-[200px] z-20 bg-cover bg-[url('/svg/she-star.svg')]"
         />
 
-        <div className="relative lg:col-span-full row-span-1 w-full min-h-[500px] lg:min-h-[800px] rounded-4xl p-8 overflow-hidden bg-black">
+        <div className="relative lg:col-span-full row-span-1 w-full min-h-[500px] lg:min-h-[600px] 2xl:min-h-[800px] rounded-4xl p-8 overflow-hidden bg-black">
           <video
             preload="none"
             autoPlay
@@ -79,7 +79,7 @@ export const Projects = ({ onMouseEnter, onMouseLeave }) => {
             <source src="/videos/Mk-EACoaching.mp4" type="video/mp4" />
           </video>
           <span className='lg:hidden absolute z-10 top-0 left-0 w-full lg:w-2/4 h-[70%] lg:h-full bg-linear-to-b lg:bg-transparent from-[#fe5c02] via-[#fe5c02] via-90% to-black-[#fe5c02]' />
-          <div className='absolute left-8 lg:left-8 lg:bottom-8 bg-white/0 lg:bg-white/20 lg:backdrop-blur-3xl lg:border-2 lg:border-white flex flex-col w-[80%] pt-12 lg:w-3/5 p-2 lg:p-6 gap-2 lg:gap-2 rounded-4xl text-white z-40 lg:translate-y-80 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
+          <div className='absolute left-8 lg:left-8 lg:bottom-8 bg-white/0 lg:bg-white/20 lg:backdrop-blur-3xl lg:border-2 lg:border-white flex flex-col w-[80%] pt-12 lg:w-4/5 2xl:w-3/5 p-2 lg:p-6 gap-2 lg:gap-2 rounded-4xl text-white z-40 lg:translate-y-96 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
             <h3 className='text-xl lg:text-2xl font-bold'>
               {t.rich('project3.title', {
                 span: (chunks) => <span className='font-stix italic'>{chunks}</span>
@@ -109,7 +109,7 @@ export const Projects = ({ onMouseEnter, onMouseLeave }) => {
             <source src="/videos/Mk-Cupcabana.mp4" type="video/mp4" />
           </video>
           <span className='lg:hidden absolute z-10 top-0 left-0 w-full lg:w-2/4 h-[70%] lg:h-full bg-linear-to-b lg:bg-transparent from-[#7f409c] via-[#7f409c] via-90% to-black-[#7f409c]' />
-          <div className='absolute left-8 lg:left-8 lg:bottom-8 bg-white/0 lg:bg-white/20 lg:backdrop-blur-3xl lg:border-2 lg:border-white flex flex-col w-[80%] pt-12 lg:w-3/5 p-2 lg:p-6 gap-2 lg:gap-2 rounded-4xl text-white z-40 lg:translate-y-80 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
+          <div className='absolute left-8 lg:left-8 lg:bottom-8 bg-white/0 lg:bg-white/20 lg:backdrop-blur-3xl lg:border-2 lg:border-white flex flex-col w-[80%] pt-12 lg:w-4/5 2xl:w-3/5 p-2 lg:p-6 gap-2 lg:gap-2 rounded-4xl text-white z-40 lg:translate-y-96 group-hover:translate-y-0 transition-all duration-500 ease-in-out'>
             <h3 className='text-xl lg:text-2xl font-bold'>
               {t.rich('project2.title', {
                 span: (chunks) => <span className='font-stix italic'>{chunks}</span>

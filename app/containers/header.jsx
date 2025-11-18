@@ -71,8 +71,8 @@ export const Header = () => {
           <span className='absolute -bottom-2 h-0.5 w-0 group-hover:w-full left-0 bg-black-agente transition-all duration-500 ease-in-out' />
         </Link>
       </div>
-      <Image className="absolute w-[180px] lg:w-[200px] 2xl:w-[300px] rotate-12 top-4 z-10 lg:top-0 left-16 lg:left-20 he-float" src={animation3d === true ? "/images/mascots/he-blink.webp" : "/images/mascots/he.webp"} alt="3D Uildes Mascot" width={500} height={500} />
-      <Image className="absolute w-[150px] lg:w-[200px] 2xl:w-[300px] -rotate-20 left-46 z-0 lg:left-auto lg:right-20 top-8 lg:top-auto lg:bottom-10 she-float" src={animation3d === true ? `/images/mascots/she-star.webp` : `/images/mascots/she-very-happy.webp`} alt="3D Uildes Mascot" width={500} height={500} />
+      <Image className="absolute w-[180px] lg:w-[200px] 2xl:w-[300px] rotate-12 top-4 z-10 lg:top-0 left-16 lg:left-20 he-float" src={animation3d === true ? "/images/mascots/he-blink.webp" : "/images/mascots/he.webp"} title={`3D Uildes Mascot`} alt="3D Uildes Mascot" width={500} height={500} />
+      <Image className="absolute w-[150px] lg:w-[200px] 2xl:w-[300px] -rotate-20 left-46 z-0 lg:left-auto lg:right-20 top-8 lg:top-auto lg:bottom-10 she-float" src={animation3d === true ? `/images/mascots/she-star.webp` : `/images/mascots/she-very-happy.webp`} title={`3D Ayalla Mascot`} alt="3D Ayalla Mascot" width={500} height={500} />
     </div>
   )
 }

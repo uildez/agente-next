@@ -31,7 +31,7 @@ export const Topbar = () => {
       <div className='flex flex-col lg:flex-row items-start lg:items-center gap-4'>
         <span>{t2("title")}</span>
         <div className='flex items-center gap-2 shadow-lg rounded-full p-2 pr-4 bg-white'>
-          <Image src={'/svg/globe.svg'} width={30} height={30} alt='Globe' />
+          <Image src={'/svg/globe.svg'} width={30} height={30} alt='Globe'  title={`Globe Icon`}/>
           <p className='text-gray-500'>
             {country === 'BR' ? t("brasil") : country}
             {/* {country === "..." ? "Detecting..." : country} */}

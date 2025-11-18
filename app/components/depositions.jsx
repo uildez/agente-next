@@ -74,7 +74,7 @@ const Carrousel = ({ items, FAST_DURATION, SLOW_DURATION }) => {
           <div className='flex flex-col min-w-[350px] lg:min-w-[500px] gap-4 w-full h-full shadow-md bg-white border-yellow border-4 rounded-[3rem] pt-8 lg:p-8 mt-8 lg:mt-12 px-8'>
             <div className='flex flex-col lg:flex-row items-start justify-between w-full'>
               <div className="flex items-center gap-4">
-                <Image src={item.foto} width={400} height={400} alt={`Photo ${item.nome}`} className="w-[50px] h-[50px] rounded-full bg-pink" />
+                <Image src={item.foto} width={400} height={400} alt={`Photo ${item.nome}`} title={`Photo ${item.nome}`} className="w-[50px] h-[50px] rounded-full bg-pink" />
                 <div className="flex flex-col items-start">
                   <p className='text-black-agente font-nexa text-xl'>
                     {item.nome}

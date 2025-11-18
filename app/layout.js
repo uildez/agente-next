@@ -11,10 +11,19 @@ import Clarity from "@microsoft/clarity";
 
 export const metadata = {
   title: "A Gente | Studio",
+  description: "A GENTE é a agência criativa global que transforma ideias em presença digital para empreendedores, agências e marcas",
   keywords: [
     "marketing digital",
     "design para redes sociais",
     "branding",
+    "code",
+    "web development",
+    "javascript",
+    "react",
+    "next.js",
+    "web dev",
+    "html",
+    "css",
     "criação de sites",
     "tráfego pago",
     "marketing para brasileiros no exterior",
@@ -22,7 +31,7 @@ export const metadata = {
     "identidade visual",
     "social media",
     "freelancer de marketing",
-    "A Gente Studio"
+    "A Gente Studio",
   ],
   authors: [{ name: "A Gente Studio", url: "https://agente.studio" }],
   creator: "A Gente Studio",
@@ -44,6 +53,9 @@ export const metadata = {
     locale: "pt_BR",
     type: "website",
   },
+  alternates: {
+    canonical: `/`,
+  },
   twitter: {
     card: "summary_large_image",
     title: "A Gente | Marketing para Brasileiros",
@@ -51,6 +63,9 @@ export const metadata = {
     images: ["https://agente.studio/og-image.jpg"],
     creator: "@agente.studio",
   },
+  applicationName: "A Gente Studio",
+  generator: 'Next.js',
+  referrer: 'origin-when-cross-origin',
   icons: {
     icon: [
       { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },

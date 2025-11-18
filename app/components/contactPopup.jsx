@@ -99,9 +99,9 @@ export default function ContactPopup({ isOpen, onClose }) {
                   <p className='text-black-agente lg:text-left text-center text-lg'>{t('subtitle')}</p>
 
                   <div className='flex gap-4'>
-                    <Link href="#" className='p-3 bg-pink text-white rounded-xl text-2xl hover:scale-105 transition-all'><FaWhatsapp /></Link>
+                    <Link href="https://wa.me/5583996504081" target='_blank' className='p-3 bg-pink text-white rounded-xl text-2xl hover:scale-105 transition-all'><FaWhatsapp /></Link>
                     <Link href="mailto:contato@agente.studio" title="Get in touch with Email" className='p-3 bg-pink text-white rounded-xl text-2xl hover:scale-105 transition-all'><FaEnvelope /></Link>
-                    <Link href="https://linkedin.com/company/agente-studio" title="See more on LinkedIn" className='p-3 bg-pink text-white rounded-xl text-2xl hover:scale-105 transition-all'><FaLinkedinIn /></Link>
+                    <Link href="https://linkedin.com/company/agente-studio" target='_blank' title="See more on LinkedIn" className='p-3 bg-pink text-white rounded-xl text-2xl hover:scale-105 transition-all'><FaLinkedinIn /></Link>
                   </div>
                 </div>
 
@@ -109,7 +109,7 @@ export default function ContactPopup({ isOpen, onClose }) {
                 <div className='w-full lg:w-3/5 rounded-3xl'>
                   {isSubmitted ? (
                     <div className='flex flex-col relative items-start justify-center bg-pink h-full p-8 rounded-3xl'>
-                      <Image className="absolute w-[130px] lg:w-[200px] rotate-20 -right-12 she-float" src={`/images/mascots/she-star.webp`} alt="3D Ayalla Mascot" width={500} height={500} />
+                      <Image className="absolute w-[130px] lg:w-[200px] rotate-20 -right-12 she-float" src={`/images/mascots/she-star.webp`} title='3D Ayalla Mascot' alt="3D Ayalla Mascot" width={500} height={500} />
                       <div className='w-full lg:w-3/5 pr-20'>
                         <h3 className='text-2xl text-white lg:text-left font-extrabold'>
                           {t('sendInfo')}

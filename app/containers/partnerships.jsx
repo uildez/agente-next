@@ -80,6 +80,7 @@ export const Partnerships = () => {
             <Image
               key={`line1-${idx}`}
               src={item}
+              title={`Logo clients ${idx}`}
               alt='Logo clients'
               className='object-contain opacity-75 hover:opacity-100 w-[150px] h-20 lg:w-auto transition-all duration-500 ease-in-out brightness-0'
               width={500}
@@ -97,6 +98,7 @@ export const Partnerships = () => {
             <Image
               key={`line2-${idx}`}
               src={item}
+              title={`Logo clients ${idx}`}
               alt='Logo clients'
               className='object-contain opacity-75 hover:opacity-100 w-[150px] h-20 lg:w-auto transition-all duration-500 ease-in-out brightness-0'
               width={500}

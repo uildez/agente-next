@@ -35,7 +35,7 @@ export const Whyagente = () => {
           })}
         </h3>
         <p className="font-nexa font-light lg:text-sm">{t("topic1.subtitle")}</p>
-        <Image className="absolute w-[200px] lg:w-[300px] left-4 lg:left-auto -top-20 lg:top-auto lg:-right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/he-money.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+        <Image title={`He with money in eyes`} className="absolute w-[200px] lg:w-[300px] left-4 lg:left-auto -top-20 lg:top-auto lg:-right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/he-money.webp"} alt="3D Uildes Mascot" width={500} height={500} />
       </motion.div>
 
       <motion.div
@@ -51,7 +51,7 @@ export const Whyagente = () => {
           })}
         </h3>
         <p className="font-nexa font-light lg:text-sm text-left lg:text-right">{t("topic2.subtitle")}</p>
-        <Image className="absolute w-[200px] lg:w-[300px] left-4 -top-20 lg:top-auto lg:-left-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/she-talk.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+        <Image title={`She talking`} className="absolute w-[200px] lg:w-[300px] left-4 -top-20 lg:top-auto lg:-left-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/mascots/she-talk.webp"} alt="3D Uildes Mascot" width={500} height={500} />
       </motion.div>
 
       <motion.div
@@ -67,7 +67,7 @@ export const Whyagente = () => {
           })}
         </h3>
         <p className="font-nexa font-light lg:text-sm">{t("topic3.subtitle")}</p>
-        <Image className="absolute w-[200px] lg:w-[300px] left-4 lg:left-auto -top-20 lg:top-auto lg:-right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/quality.webp"} alt="3D Uildes Mascot" width={500} height={500} />
+        <Image title={`Quality Icon`} className="absolute w-[200px] lg:w-[300px] left-4 lg:left-auto -top-20 lg:top-auto lg:-right-20 he-float group-hover:scale-110 transition-all duration-500 ease-in-out" src={"/images/quality.webp"} alt="3D Uildes Mascot" width={500} height={500} />
       </motion.div>
 
       {/* SVG */}

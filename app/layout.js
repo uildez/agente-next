@@ -14,6 +14,8 @@ export const metadata = {
   description: "A GENTE é a agência criativa global que transforma ideias em presença digital para empreendedores, agências e marcas",
   keywords: [
     "marketing digital",
+    "b2b",
+    "B2B",
     "design para redes sociais",
     "branding",
     "code",

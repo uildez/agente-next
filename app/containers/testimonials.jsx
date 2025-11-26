@@ -28,7 +28,7 @@ export const Testimonials = () => {
           </span>
         </Link>
       </div>
-      <Depositions />
+      <Depositions language={t("language")}/>
       <Link className='flex lg:hidden w-fit relative items-center group gap-4 text-white bg-white/50 px-8 py-4 pr-16 rounded-full hover:scale-105 transition-all duration-500 ease-in-out' href={"https://g.page/r/CSslV5s6q44AEAI/review"} title={t("cta")}>
         {t("cta")}
         <span className='absolute flex items-center justify-center right-2 top-1.5 bg-white w-[45px] h-[80%] rounded-full'>

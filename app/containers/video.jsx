@@ -21,7 +21,7 @@ export const Video = ({ onMouseEnter, onMouseLeave }) => {
     onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       ref={ref}
-      className="relative flex justify-center items-center w-full -mt-32"
+      className="relative flex justify-center items-center w-full -mt-12 2xl:-mt-32"
     >
       <motion.video
         style={{

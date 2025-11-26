@@ -98,14 +98,11 @@ const Carrousel = ({ items, FAST_DURATION, SLOW_DURATION }) => {
   );
 };
 
-const Depositions = () => {
+const Depositions = (language) => {
   const FAST_DURATION = 100;
   const SLOW_DURATION = 150;
-  const router = useRouter()
-  const { locale } = router
-  const t = locale === "en" ? "en" : "pt"
 
-  const currentDepositions = t === 'pt' ? depositions : depositionsEn;
+  const currentDepositions = language.language === 'pt' ? depositions : depositionsEn;
 
   return (
     <div className='flex relative min-h-[30vh] gap-8 lg:gap-20'>

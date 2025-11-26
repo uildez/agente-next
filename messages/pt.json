@@ -140,7 +140,8 @@
   "Testimonials": {
     "pretitle": "Depoimentos",
     "title": "O que dizem nossos clientes",
-    "cta": "Deixe seu depoimento"
+    "cta": "Deixe seu depoimento",
+    "language": "pt"
   },
   "Questions": {
     "pretitle": "Perguntas Frequentes.",

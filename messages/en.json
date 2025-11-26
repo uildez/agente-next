@@ -140,7 +140,8 @@
   "Testimonials": {
     "pretitle": "Testimonials",
     "title": "What your clients say",
-    "cta": "Give a Testimonial"
+    "cta": "Give a Testimonial",
+    "language": "en"
   },
   "Questions": {
     "pretitle": "Questions",
